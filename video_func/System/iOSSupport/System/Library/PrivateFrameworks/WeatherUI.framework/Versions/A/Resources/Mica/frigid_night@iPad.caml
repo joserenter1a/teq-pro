@@ -1,0 +1,755 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<caml xmlns="http://www.apple.com/CoreAnimation/1.0">
+  <CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" backgroundColor="0 0 0" bounds="0 0 2048 2732" clearsContext="1" contentsFormat="RGBA8" edgeAntialiasingMask="0" hidden="0" name="Root Layer" position="1024 1366">
+    <sublayers>
+      <CALayer id="#1" allowsEdgeAntialiasing="0" allowsGroupOpacity="1" backgroundColor="0 0 0" bounds="0 0 937.055038452148 1117.059692382812" contentsFormat="RGBA8" masksToBounds="0" name="Rotation" position="1005.298309326172 1365.835998535156" transform="scale(2.446, 2.446, 1)">
+	<sublayers>
+	  <CAGradientLayer id="#8" allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 967.02912902832 1117.059692382812" contentsFormat="RGBA8" hidden="0" name="__Background" position="483.514556884766 558.529846191406">
+	    <colors>
+	      <CGColor value="0.2196 0.2784 0.4039"/>
+	      <CGColor value="0.1294 0.1451 0.2431"/>
+	      <CGColor value="0.01569 0.01569 0.09804"/>
+	    </colors>
+	    <locations>
+	      <integer value="0"/>
+	      <real value="0.345"/>
+	      <integer value="1"/>
+	    </locations>
+	    <states/>
+	    <stateTransitions/>
+	  </CAGradientLayer>
+	  <CAEmitterLayer id="#5" birthRate="6" cullRect="-8.988465674312e307 400 1.797693134862e308 1.797693134862e308" emitterPosition="320 1146" emitterShape="line" emitterSize="1136 0" scale="0.5" allowsEdgeAntialiasing="0" allowsGroupOpacity="1" beginTime="-600" bounds="0 0 965.030853271484 1117.059692382812" contentsFormat="RGBA8" edgeAntialiasingMask="0" hidden="0" name="✨" position="482.515426635742 558.529846191406" speed="0.5" transform="">
+	    <emitterCells>
+	      <CAEmitterCell alphaRange="1" alphaSpeed="0" autoreverses="0" beginTime="0" birthRate="1.6" blueRange="0" blueSpeed="0" contentsFrameCount="8" contentsFrameMode="random" contentsFramesPerRow="2" contentsFramesPerSecond="6" contentsRect="0 0 0.5 0.25" emissionLatitude="0" emissionLongitude="3.14159" emissionRange="0" enabled="1" fillMode="both" greenRange="-0.1" greenSpeed="0" lifetime="750" lifetimeRange="0" name="red-yellow" redRange="0" redSpeed="0" repeatCount="inf" repeatDuration="inf" scale="1" scaleRange="0" scaleSpeed="0" speed="1" spin="0.523599" spinRange="0" timeOffset="0" velocity="-10" yAcceleration="0">
+		<color opacity="0.6439" value="1 0.9935 0.9737"/>
+		<contents type="CGImage" relativePath="/assets/Star-Frames.heic" src="assets/Star-Frames.heic"/>
+		<emitterBehaviors>
+		  <CAEmitterBehavior behavior="valueOverDistance" name="valueOverDistance" keyPath="scale" zPosition="0" orientationLatitude="-1.5708" attractorType="axial" falloffDistance="0" falloff="736" orientationLongitude="0" position="0 1136" additive="0">
+		    <values>
+		      <real value="0.6"/>
+		      <real value="0.3"/>
+		    </values>
+		    <stiffness type="integer" value="1"/>
+		    <radius type="integer" value="0"/>
+		  </CAEmitterBehavior>
+		  <CAEmitterBehavior behavior="valueOverDistance" name="valueOverDistance 2" keyPath="color.alpha" zPosition="0" orientationLatitude="-1.5708" attractorType="axial" falloffDistance="0" falloff="750" orientationLongitude="0" position="0 1136" additive="0">
+		    <values>
+		      <integer value="1"/>
+		      <integer value="0"/>
+		    </values>
+		    <stiffness type="integer" value="1"/>
+		    <radius type="integer" value="0"/>
+		  </CAEmitterBehavior>
+		</emitterBehaviors>
+	      </CAEmitterCell>
+	      <CAEmitterCell alphaRange="0" alphaSpeed="0" autoreverses="0" beginTime="0" birthRate="0.8" blueRange="0" blueSpeed="0" contentsFrameCount="8" contentsFrameMode="random" contentsFramesPerRow="2" contentsFramesPerSecond="6" contentsRect="0 0 0.5 0.25" emissionLatitude="0" emissionLongitude="3.14159" emissionRange="0" enabled="1" fillMode="both" greenRange="0" greenSpeed="0" lifetime="750" lifetimeRange="0" name="blue" redRange="0" redSpeed="0" repeatCount="inf" repeatDuration="inf" scale="1" scaleRange="0" scaleSpeed="0" speed="1" spin="0.523599" spinRange="0" timeOffset="0" velocity="-10" yAcceleration="0">
+		<color opacity="0.61" value="0.8005 0.901 1"/>
+		<contents type="CGImage" relativePath="/assets/Star-Frames.heic" src="assets/Star-Frames.heic"/>
+		<emitterBehaviors>
+		  <CAEmitterBehavior behavior="valueOverDistance" name="valueOverDistance" keyPath="scale" zPosition="0" orientationLatitude="-1.5708" attractorType="axial" falloffDistance="0" falloff="836" orientationLongitude="0" position="0 1136" additive="0">
+		    <values>
+		      <real value="0.6"/>
+		      <real value="0.3"/>
+		    </values>
+		    <stiffness type="integer" value="1"/>
+		    <radius type="integer" value="0"/>
+		  </CAEmitterBehavior>
+		  <CAEmitterBehavior behavior="valueOverDistance" name="valueOverDistance 2" keyPath="color.alpha" zPosition="0" orientationLatitude="-1.5708" attractorType="axial" falloffDistance="0" falloff="750" orientationLongitude="0" position="0 1136" additive="0">
+		    <values>
+		      <integer value="1"/>
+		      <integer value="0"/>
+		    </values>
+		    <stiffness type="integer" value="1"/>
+		    <radius type="integer" value="0"/>
+		  </CAEmitterBehavior>
+		</emitterBehaviors>
+	      </CAEmitterCell>
+	      <CAEmitterCell alphaRange="0" alphaSpeed="0" autoreverses="0" beginTime="0" birthRate="0.4" blueRange="0" blueSpeed="0" contentsFrameCount="8" contentsFrameMode="random" contentsFramesPerRow="2" contentsFramesPerSecond="6" contentsRect="0 0 0.5 0.25" emissionLatitude="0" emissionLongitude="3.14159" emissionRange="0" enabled="1" fillMode="both" greenRange="0" greenSpeed="0" lifetime="750" lifetimeRange="0" name="white" redRange="0" redSpeed="0" repeatCount="inf" repeatDuration="inf" scale="1" scaleRange="0" scaleSpeed="0" speed="1" spin="0.523599" spinRange="0" timeOffset="0" velocity="-10" yAcceleration="0">
+		<color opacity="0.7565" value="0.8784 0.9412 1"/>
+		<contents type="CGImage" relativePath="/assets/Star-Frames.heic" src="assets/Star-Frames.heic"/>
+		<emitterBehaviors>
+		  <CAEmitterBehavior behavior="valueOverDistance" name="valueOverDistance" keyPath="scale" zPosition="0" orientationLatitude="-1.5708" attractorType="axial" falloffDistance="0" falloff="836" orientationLongitude="0" position="0 1136" additive="0">
+		    <values>
+		      <real value="0.6"/>
+		      <real value="0.3"/>
+		    </values>
+		    <stiffness type="integer" value="1"/>
+		    <radius type="integer" value="0"/>
+		  </CAEmitterBehavior>
+		  <CAEmitterBehavior behavior="valueOverDistance" name="valueOverDistance 2" keyPath="color.alpha" zPosition="0" orientationLatitude="-1.5708" attractorType="axial" falloffDistance="0" falloff="750" orientationLongitude="0" position="0 1136" additive="0">
+		    <values>
+		      <integer value="1"/>
+		      <integer value="0"/>
+		    </values>
+		    <stiffness type="integer" value="1"/>
+		    <radius type="integer" value="0"/>
+		  </CAEmitterBehavior>
+		</emitterBehaviors>
+	      </CAEmitterCell>
+	      <CAEmitterCell alphaRange="0" alphaSpeed="0" autoreverses="0" beginTime="0" birthRate="0.2" blueRange="0" blueSpeed="0" contentsFrameCount="4" contentsFrameMode="random" contentsFramesPerRow="1" contentsFramesPerSecond="6" contentsRect="0 0 0.5 0.25" emissionLatitude="0" emissionLongitude="3.14159" emissionRange="0" enabled="1" fillMode="both" greenRange="0" greenSpeed="0" lifetime="750" lifetimeRange="0" name="large" redRange="0" redSpeed="0" repeatCount="inf" repeatDuration="inf" scale="1" scaleRange="0" scaleSpeed="0" speed="1" spin="0.523599" spinRange="0" timeOffset="0" velocity="-10" yAcceleration="0">
+		<color opacity="0.7565" value="0.8784 0.9412 1"/>
+		<contents type="CGImage" relativePath="/assets/Star-Frames.heic" src="assets/Star-Frames.heic"/>
+		<emitterBehaviors>
+		  <CAEmitterBehavior behavior="valueOverDistance" name="valueOverDistance" additive="0" position="0 1136" orientationLongitude="0" falloff="836" falloffDistance="0" attractorType="axial" orientationLatitude="-1.5708" zPosition="0" keyPath="scale">
+		    <radius type="integer" value="0"/>
+		    <stiffness type="integer" value="1"/>
+		    <values>
+		      <real value="1.2"/>
+		      <real value="0.6"/>
+		    </values>
+		  </CAEmitterBehavior>
+		  <CAEmitterBehavior behavior="valueOverDistance" name="valueOverDistance 2" keyPath="color.alpha" zPosition="0" orientationLatitude="-1.5708" attractorType="axial" falloffDistance="0" falloff="750" orientationLongitude="0" position="0 1136" additive="0">
+		    <values>
+		      <integer value="1"/>
+		      <integer value="0"/>
+		    </values>
+		    <stiffness type="integer" value="1"/>
+		    <radius type="integer" value="0"/>
+		  </CAEmitterBehavior>
+		</emitterBehaviors>
+	      </CAEmitterCell>
+	    </emitterCells>
+	    <backgroundColor opacity="0" value="0 0 0"/>
+	  </CAEmitterLayer>
+	  <CAEmitterLayer id="#6" cullRect="-8.988465674312e307 400 1.797693134862e308 1.797693134862e308" emitterPosition="320 1146" emitterShape="line" scale="1.1" allowsEdgeAntialiasing="0" allowsGroupOpacity="1" beginTime="-600" bounds="0 0 160 1117.059692382812" contentsFormat="RGBA8" edgeAntialiasingMask="0" hidden="0" name="👽" position="560 558.529846191406" speed="0.5" transform="">
+	    <emitterBehaviors>
+	      <CAEmitterBehavior behavior="valueOverLife" name="valueOverLife 3" keyPath="position.x" additive="0">
+		<values>
+		  <integer value="0"/>
+		  <integer value="0"/>
+		  <integer value="-50"/>
+		  <integer value="-50"/>
+		  <integer value="0"/>
+		  <integer value="0"/>
+		  <integer value="50"/>
+		  <integer value="50"/>
+		  <integer value="0"/>
+		  <integer value="0"/>
+		  <integer value="-50"/>
+		  <integer value="-50"/>
+		  <integer value="0"/>
+		  <integer value="0"/>
+		</values>
+	      </CAEmitterBehavior>
+	    </emitterBehaviors>
+	    <emitterCells>
+	      <CAEmitterCell alphaRange="0" alphaSpeed="0" autoreverses="0" beginTime="0" birthRate="0.015" blueRange="0" blueSpeed="0" color="1 1 1" contentsFrameCount="8" contentsFrameMode="random" contentsFramesPerRow="2" contentsFramesPerSecond="2" contentsRect="0 0 0.5 0.25" emissionLatitude="0" emissionLongitude="3.14159" emissionRange="0" enabled="1" fillMode="both" greenRange="0" greenSpeed="0" lifetime="75" lifetimeRange="0" name="blue" redRange="0" redSpeed="0" repeatCount="inf" repeatDuration="inf" scale="1" scaleRange="0" scaleSpeed="0" speed="1" spin="0.523599" spinRange="0" timeOffset="0" velocity="-10" yAcceleration="0">
+		<contents type="CGImage" relativePath="/assets/Star-Frames.heic" src="assets/Star-Frames.heic"/>
+		<emitterBehaviors>
+		  <CAEmitterBehavior behavior="valueOverDistance" name="valueOverDistance" additive="0" position="0 1136" orientationLongitude="0" falloff="836" falloffDistance="0" attractorType="axial" orientationLatitude="-1.5708" zPosition="0" keyPath="scale">
+		    <radius type="integer" value="0"/>
+		    <stiffness type="integer" value="1"/>
+		    <values>
+		      <real value="0.6"/>
+		      <real value="0.3"/>
+		    </values>
+		  </CAEmitterBehavior>
+		  <CAEmitterBehavior behavior="valueOverDistance" name="valueOverDistance 2" additive="0" position="0 1136" orientationLongitude="0" falloff="750" falloffDistance="0" attractorType="axial" orientationLatitude="-1.5708" zPosition="0" keyPath="color.alpha">
+		    <radius type="integer" value="0"/>
+		    <stiffness type="integer" value="1"/>
+		    <values>
+		      <integer value="1"/>
+		      <integer value="0"/>
+		    </values>
+		  </CAEmitterBehavior>
+		</emitterBehaviors>
+	      </CAEmitterCell>
+	    </emitterCells>
+	    <backgroundColor opacity="0" value="0 0 0"/>
+	    <filters>
+	      <CAFilter filter="multiplyColor" name="multiplyColor" inputColor="1 0 0"/>
+	    </filters>
+	    <animations>
+	      <p key="animation-1" type="CAKeyframeAnimation" keyPath="filters.multiplyColor.inputColor" beginTime="1e-100" duration="10" fillMode="both" removedOnCompletion="0" repeatCount="inf">
+		<keyTimes>
+		  <real value="0.85"/>
+		  <real value="0.85"/>
+		  <real value="0.9"/>
+		  <real value="0.9"/>
+		  <real value="0.95"/>
+		  <real value="0.95"/>
+		  <integer value="1"/>
+		</keyTimes>
+		<timingFunctions/>
+		<values>
+		  <CGColor value="1 1 1"/>
+		  <CGColor value="1 0.502 0.502"/>
+		  <CGColor value="1 0.502 0.502"/>
+		  <CGColor value="0.5567 0.9836 0.5732"/>
+		  <CGColor value="0.5567 0.9836 0.5732"/>
+		  <CGColor value="0.5767 0.5938 1"/>
+		  <CGColor value="0.5767 0.5938 1"/>
+		</values>
+	      </p>
+	    </animations>
+	  </CAEmitterLayer>
+	  <CAEmitterLayer id="#9" emitterShape="line" emitterSize="320 0" allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 160 60" contentsFormat="RGBA8" edgeAntialiasingMask="0" hidden="0" name="💫" position="560.621399176955 1087.028806584362">
+	    <emitterCells>
+	      <CAEmitterCell alphaRange="0" alphaSpeed="0" birthRate="0.9" blueRange="-0.25" blueSpeed="1" contentsFrameCount="8" contentsFrameMode="sequential" contentsFramesPerRow="8" contentsRect="0 0 0.125 1" emissionLatitude="0" emissionLongitude="-1.22173" emissionRange="0.349066" enabled="1" greenRange="-0.25" greenSpeed="0" lifetime="0.3" lifetimeRange="0" name="cell" orientationLatitude="0" orientationLongitude="0" orientationRange="0" particleType="sprite" redRange="0" redSpeed="0" scale="1" velocity="1000" velocityRange="0">
+		<color opacity="0.8" value="1 1 1"/>
+		<contents type="CGImage" relativePath="/assets/Meteor.heic" src="assets/Meteor.heic"/>
+		<emitterBehaviors>
+		  <CAEmitterBehavior behavior="alignToMotion" name="alignToMotion" rotation="0"/>
+		</emitterBehaviors>
+	      </CAEmitterCell>
+	    </emitterCells>
+	    <backgroundColor opacity="0" value="0.2618 1 0"/>
+	    <animations>
+	      <p key="animation-1" type="CAKeyframeAnimation" keyPath="birthRate" beginTime="1e-100" duration="50" enabled="1" fillMode="both" removedOnCompletion="0" repeatCount="inf">
+		<keyTimes>
+		  <integer value="0"/>
+		  <real value="0.002"/>
+		  <real value="0.002"/>
+		  <real value="0.5"/>
+		  <real value="0.5"/>
+		  <real value="0.51"/>
+		  <real value="0.51"/>
+		  <integer value="1"/>
+		</keyTimes>
+		<values>
+		  <integer value="1"/>
+		  <integer value="1"/>
+		  <real value="1e-06"/>
+		  <real value="1e-06"/>
+		  <integer value="1"/>
+		  <integer value="1"/>
+		  <real value="1e-06"/>
+		  <real value="1e-06"/>
+		</values>
+	      </p>
+	    </animations>
+	  </CAEmitterLayer>
+	  <CALayer id="#7" allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 959.036041259766 1117.02880859375" contentsFormat="RGBA8" hidden="0" name="__Xtras" position="479.518020629883 558.514404296875">
+	    <actions>
+	      <position type="CASpringAnimation" damping="400" mass="2" stiffness="300" velocity="0" keyPath="position" duration="1" timingFunction="0.22368 0.002045 0.55342 0.95297"/>
+	    </actions>
+	    <sublayers>
+	      <CALayer id="#2" allowsEdgeAntialiasing="0" allowsGroupOpacity="1" anchorPoint="0 0.5" bounds="0 0 961.034301757812 1117.02880859375" contentsFormat="RGBA8" name="__temp-UI-a.tif" opacity="0" position="0 558.514404296875">
+		<contents type="CGImage" relativePath="/__assets/__temp-UI-a.tif" src="__assets/__temp-UI-a.tif"/>
+	      </CALayer>
+	      <CALayer id="#3" allowsEdgeAntialiasing="0" allowsGroupOpacity="1" anchorPoint="0 0.5" bounds="0 0 953.041213989258 1117.059692382812" contentsFormat="RGBA8" name="__temp-UI-b.tif" opacity="0" position="0 558.529846191406">
+		<contents type="CGImage" relativePath="/__assets/__temp-UI-b.tif" src="__assets/__temp-UI-b.tif"/>
+	      </CALayer>
+	      <CALayer id="#4" allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 947.046401977539 1136" contentsFormat="RGBA8" name="__View Shadows" opacity="1" position="473.523193359375 -568">
+		<backgroundColor opacity="0.2" value="1 1 1"/>
+	      </CALayer>
+	    </sublayers>
+	    <eventHandlers>
+	      <LKEventHandler eventType="click" action="setPlayhead" actionValue="0"/>
+	    </eventHandlers>
+	    <scriptComponents>
+	      <LKScriptComponentInstance name="Draggable">
+		<component relativePath="/__assets/draggable.caml" src="__assets/draggable.caml"/>
+		<values>
+		  <animDamping type="integer" value="400"/>
+		  <animDuration type="integer" value="1"/>
+		  <animInitialV type="integer" value="0"/>
+		  <animMass type="integer" value="2"/>
+		  <animStiffness type="integer" value="300"/>
+		  <animTimingFunction type="CAMediaTimingFunction" value="0.22368 0.002045 0.55342 0.95297"/>
+		  <animType type="string" value="✻ Spring"/>
+		  <animateDragBool type="integer" value="0"/>
+		  <animatePagingBool type="integer" value="1"/>
+		  <constrainToParent type="integer" value="0"/>
+		  <dragThreshold type="integer" value="2"/>
+		  <dragX type="integer" value="0"/>
+		  <dragY type="integer" value="1"/>
+		  <instructionsBool type="integer" value="0"/>
+		  <pageOffset type="CGPoint" value="0 0"/>
+		  <pageSize type="CGPoint" value="0 0"/>
+		  <pagingMax type="CGPoint" value="Inf Inf"/>
+		  <pagingMin type="CGPoint" value="-Inf -Inf"/>
+		  <pixelTurbo type="CGPoint" value="1 1"/>
+		  <resetDelay type="integer" value="0"/>
+		  <resetOnMouseUpBool type="integer" value="0"/>
+		  <resetPosition type="CGPoint" value="0 0"/>
+		  <snapToMousedownX type="integer" value="0"/>
+		  <snapToMousedownY type="integer" value="0"/>
+		</values>
+	      </LKScriptComponentInstance>
+	    </scriptComponents>
+	  </CALayer>
+	</sublayers>
+      </CALayer>
+    </sublayers>
+    <states>
+      <LKState name="Full"/>
+      <LKState name="Landscape" basedOn="Full">
+	<elements>
+	  <LKStateSetValue targetId="#1" keyPath="transform.rotation.z">
+	    <value type="real" value="1.5708"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#1" keyPath="position.y">
+	    <value type="integer" value="1389"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#1" keyPath="transform.scale.xy">
+	    <value type="real" value="4.341"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#1" keyPath="position.x">
+	    <value type="real" value="2465.6"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#2" keyPath="opacity">
+	    <value type="integer" value="0"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#3" keyPath="opacity">
+	    <value type="integer" value="0"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#4" keyPath="opacity">
+	    <value type="integer" value="0"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#5" keyPath="position.y">
+	    <value type="integer" value="818"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#5" keyPath="transform.scale.xy">
+	    <value type="real" value="0.563"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#6" keyPath="position.y">
+	    <value type="integer" value="818"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#6" keyPath="transform.scale.xy">
+	    <value type="real" value="0.563"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue final="false" targetId="#7" keyPath="position.y">
+	    <value type="real" value="563.255"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue final="false" targetId="#7" keyPath="bounds.size.height">
+	    <value type="real" value="1126.51"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue final="false" targetId="#2" keyPath="position.y">
+	    <value type="real" value="563.255"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue final="false" targetId="#2" keyPath="bounds.size.height">
+	    <value type="real" value="1126.51"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue final="false" targetId="#3" keyPath="position.y">
+	    <value type="real" value="563.255"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue final="false" targetId="#3" keyPath="bounds.size.height">
+	    <value type="real" value="1126.51"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue final="false" targetId="#5" keyPath="emitterPosition.x">
+	    <value type="integer" value="320"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue final="false" targetId="#5" keyPath="emitterPosition.y">
+	    <value type="integer" value="1146"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue final="false" targetId="#5" keyPath="emitterCells.large.enabled">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue final="false" targetId="#5" keyPath="emitterCells.white.enabled">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue final="false" targetId="#5" keyPath="emitterCells.blue.enabled">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue final="false" targetId="#5" keyPath="emitterCells.red-yellow.enabled">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue final="false" targetId="#1" keyPath="transform.scale.xy">
+	    <value type="integer" value="3"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue final="false" targetId="#5" keyPath="position.y">
+	    <value type="integer" value="735"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue final="false" targetId="#5" keyPath="bounds.size.width">
+	    <value type="integer" value="965"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue final="false" targetId="#5" keyPath="position.x">
+	    <value type="real" value="621.685"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue final="false" targetId="#1" keyPath="bounds.size.height">
+	    <value type="real" value="1126.51"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue final="false" targetId="#1" keyPath="bounds.size.width">
+	    <value type="real" value="910.667"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue final="false" targetId="#1" keyPath="position.y">
+	    <value type="integer" value="1366"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue final="false" targetId="#1" keyPath="position.x">
+	    <value type="real" value="1689.09"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue final="false" targetId="#8" keyPath="bounds.size.height">
+	    <value type="real" value="1126.51"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue final="false" targetId="#8" keyPath="position.y">
+	    <value type="real" value="563.255"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue final="false" targetId="#5" keyPath="cullRect.origin.x">
+	    <value type="integer" value="-580"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue final="false" targetId="#5" keyPath="emitterSize.width">
+	    <value type="integer" value="2000"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue final="false" targetId="#8" keyPath="hidden">
+	    <value type="integer" value="0"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue final="false" targetId="#6" keyPath="position">
+	    <value type="CGPoint" value="483 818"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue final="false" targetId="#9" keyPath="position">
+	    <value type="CGPoint" value="484.621399176955 1087.028806584362"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue final="false" targetId="#9" keyPath="hidden">
+	    <value type="integer" value="0"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue final="false" targetId="#6" keyPath="hidden">
+	    <value type="integer" value="0"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue final="false" targetId="#5" keyPath="hidden">
+	    <value type="integer" value="0"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue final="false" targetId="#5" keyPath="transform.scale.xy">
+	    <value type="real" value="0.8"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue final="false" targetId="#5" keyPath="position">
+	    <value type="CGPoint" value="582.685 741"/>
+	  </LKStateSetValue>
+	</elements>
+      </LKState>
+      <LKState name="Mini">
+	<elements>
+	  <LKStateRemoveElement targetId="#1" keyPath="sublayers">
+	    <object type="CAEmitterLayer" cullRect="-8.988465674312e307 -Inf Inf 1.797693134862e308" emitterPosition="16 16" allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 32 32" contentsFormat="RGBA8" edgeAntialiasingMask="0" hidden="0" name="" position="560 1152">
+	      <emitterBehaviors>
+		<CAEmitterBehavior behavior="valueOverLife" name="valueOverLife" keyPath="position.y" additive="0">
+		  <values>
+		    <integer value="0"/>
+		    <integer value="-640"/>
+		  </values>
+		</CAEmitterBehavior>
+		<CAEmitterBehavior behavior="wave" name="wave" enabled="0" frequency="0.02" force="2 0 0"/>
+		<CAEmitterBehavior behavior="valueOverLife" name="valueOverLife 3" additive="1" keyPath="position.x">
+		  <values>
+		    <integer value="0"/>
+		    <integer value="0"/>
+		    <integer value="-40"/>
+		    <integer value="-40"/>
+		    <integer value="0"/>
+		    <integer value="0"/>
+		    <integer value="40"/>
+		    <integer value="40"/>
+		    <integer value="0"/>
+		    <integer value="0"/>
+		    <integer value="-40"/>
+		    <integer value="-40"/>
+		    <integer value="0"/>
+		    <integer value="0"/>
+		  </values>
+		</CAEmitterBehavior>
+		<CAEmitterBehavior behavior="valueOverLife" name="valueOverLife 2" keyPath="color.alpha" additive="0">
+		  <values>
+		    <integer value="1"/>
+		    <integer value="0"/>
+		  </values>
+		</CAEmitterBehavior>
+	      </emitterBehaviors>
+	      <emitterCells>
+		<CAEmitterCell alphaRange="0" alphaSpeed="0" autoreverses="0" beginTime="0" birthRate="0.02" blueRange="0" blueSpeed="0" contentsFrameCount="16" contentsFrameMode="random" contentsFramesPerRow="4" contentsFramesPerSecond="6" contentsRect="0 0 0.25 0.25" emissionLatitude="0" emissionLongitude="3.05433" emissionRange="0" enabled="1" fillMode="both" greenRange="0" greenSpeed="0" lifetime="120" lifetimeRange="0" name="white" redRange="0" redSpeed="0" repeatCount="inf" repeatDuration="inf" scale="0.3" scaleRange="0.1" scaleSpeed="0" speed="1" spin="0.523599" spinRange="0" timeOffset="0" velocity="0" yAcceleration="0">
+		  <color opacity="0.5" value="0.8784 0.9412 1"/>
+		  <contents type="CGImage" relativePath="/assets/Star-Frames.heic" src="assets/Star-Frames.heic"/>
+		</CAEmitterCell>
+	      </emitterCells>
+	      <backgroundColor opacity="0" value="0 0 0"/>
+	    </object>
+	  </LKStateRemoveElement>
+	  <LKStateRemoveElement targetId="#1" keyPath="sublayers">
+	    <object type="CAEmitterLayer" emitterShape="line" emitterSize="320 0" renderMode="oldestFirst" allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 160 40" contentsFormat="RGBA8" edgeAntialiasingMask="0" name="" position="560 1116">
+	      <emitterBehaviors>
+		<CAEmitterBehavior behavior="valueOverLife" name="valueOverLife" additive="1" keyPath="color.alpha">
+		  <values>
+		    <integer value="-1"/>
+		    <integer value="-1"/>
+		  </values>
+		</CAEmitterBehavior>
+	      </emitterBehaviors>
+	      <emitterCells>
+		<CAEmitterCell alphaRange="0" alphaSpeed="0" birthRate="1" blueRange="-0.25" blueSpeed="1" contentsFrameCount="8" contentsFrameMode="sequential" contentsFramesPerRow="8" contentsRect="0 0 0.125 1" emissionLatitude="0" emissionLongitude="-1.03149" emissionRange="0.523599" greenRange="-0.25" greenSpeed="0" lifetime="0.01" lifetimeRange="0.2" name="cell" orientationLatitude="0" orientationLongitude="0" orientationRange="0" particleType="sprite" redRange="0" redSpeed="0" scale="1" velocity="1200" velocityRange="0">
+		  <color opacity="0.8" value="1 1 1"/>
+		  <contents type="CGImage" relativePath="/assets/Meteor.heic" src="assets/Meteor.heic"/>
+		  <emitterBehaviors>
+		    <CAEmitterBehavior behavior="alignToMotion" name="alignToMotion" rotation="0"/>
+		  </emitterBehaviors>
+		</CAEmitterCell>
+	      </emitterCells>
+	      <backgroundColor opacity="0" value="0.2618 1 0"/>
+	      <animations>
+		<p key="animation-2" type="CAKeyframeAnimation" keyPath="emitterBehaviors.valueOverLife.values.@index(0)" beginTime="1e-100" duration="20" enabled="1" fillMode="both" removedOnCompletion="0" repeatCount="inf">
+		  <keyTimes>
+		    <integer value="0"/>
+		    <real value="0.88"/>
+		    <real value="0.92"/>
+		    <real value="0.96"/>
+		    <integer value="1"/>
+		  </keyTimes>
+		  <values>
+		    <integer value="-1"/>
+		    <integer value="-1"/>
+		    <integer value="0"/>
+		    <integer value="0"/>
+		    <integer value="-1"/>
+		  </values>
+		</p>
+		<p key="animation-1" type="CAKeyframeAnimation" keyPath="emitterBehaviors.valueOverLife.values.@index(1)" beginTime="1e-100" duration="20" enabled="1" fillMode="both" removedOnCompletion="0" repeatCount="inf">
+		  <keyTimes>
+		    <integer value="0"/>
+		    <real value="0.88"/>
+		    <real value="0.92"/>
+		    <real value="0.96"/>
+		    <integer value="1"/>
+		  </keyTimes>
+		  <values>
+		    <integer value="-1"/>
+		    <integer value="-1"/>
+		    <integer value="0"/>
+		    <integer value="0"/>
+		    <integer value="-1"/>
+		  </values>
+		</p>
+	      </animations>
+	    </object>
+	  </LKStateRemoveElement>
+	</elements>
+      </LKState>
+    </states>
+    <stateTransitions>
+      <LKStateTransition fromState="*" toState="Landscape">
+	<elements>
+	  <LKStateTransitionElement key="position.x" targetId="#1">
+	    <animation type="CASpringAnimation" damping="400" mass="2" stiffness="300" keyPath="position.x" beginTime="1e-100" beginTimeMode="absolute" duration="0.91" fillMode="backwards" removedOnCompletion="1" timingFunction="0.22368 0.002045 0.55342 0.95297"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="position.y" targetId="#1">
+	    <animation type="CASpringAnimation" damping="400" mass="2" stiffness="300" keyPath="position.y" beginTime="1e-100" beginTimeMode="absolute" duration="0.91" fillMode="backwards" removedOnCompletion="1" timingFunction="0.22368 0.002045 0.55342 0.95297"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="transform.scale.xy" targetId="#1">
+	    <animation type="CASpringAnimation" damping="400" mass="2" stiffness="300" keyPath="transform.scale.xy" beginTime="1e-100" beginTimeMode="absolute" duration="0.91" fillMode="backwards" removedOnCompletion="1" timingFunction="0.22368 0.002045 0.55342 0.95297"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="transform.rotation.z" targetId="#1">
+	    <animation type="CASpringAnimation" damping="400" mass="2" stiffness="300" keyPath="transform.rotation.z" beginTime="1e-100" beginTimeMode="absolute" duration="0.91" fillMode="backwards" removedOnCompletion="1" timingFunction="0.22368 0.002045 0.55342 0.95297"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="opacity" targetId="#2">
+	    <animation type="CASpringAnimation" damping="400" mass="2" stiffness="300" keyPath="opacity" beginTime="1e-100" beginTimeMode="absolute" duration="0.91" fillMode="backwards" removedOnCompletion="1" timingFunction="0.22368 0.002045 0.55342 0.95297"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="opacity" targetId="#3">
+	    <animation type="CASpringAnimation" damping="400" mass="2" stiffness="300" keyPath="opacity" beginTime="1e-100" beginTimeMode="absolute" duration="0.91" fillMode="backwards" removedOnCompletion="1" timingFunction="0.22368 0.002045 0.55342 0.95297"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="opacity" targetId="#4">
+	    <animation type="CASpringAnimation" damping="400" mass="2" stiffness="300" keyPath="opacity" beginTime="1e-100" beginTimeMode="absolute" duration="0.91" fillMode="backwards" removedOnCompletion="1" timingFunction="0.22368 0.002045 0.55342 0.95297"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="position.y" targetId="#5">
+	    <animation type="CABasicAnimation" keyPath="position.y" duration="0.25" fillMode="backwards" timingFunction="easeInEaseOut"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="transform.scale.xy" targetId="#5">
+	    <animation type="CABasicAnimation" keyPath="transform.scale.xy" duration="0.25" fillMode="backwards" timingFunction="easeInEaseOut"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="position.y" targetId="#6">
+	    <animation type="CABasicAnimation" keyPath="position.y" duration="0.25" fillMode="backwards" timingFunction="easeInEaseOut"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="transform.scale.xy" targetId="#6">
+	    <animation type="CABasicAnimation" keyPath="transform.scale.xy" duration="0.25" fillMode="backwards" timingFunction="easeInEaseOut"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement final="false" key="bounds.size.height" targetId="#1">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" keyPath="bounds.size.height" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement final="false" key="position.y" targetId="#8">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" keyPath="position.y" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement final="false" key="bounds.size.height" targetId="#8">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" keyPath="bounds.size.height" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement final="false" key="position.y" targetId="#7">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" keyPath="position.y" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement final="false" key="bounds.size.height" targetId="#7">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" keyPath="bounds.size.height" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement final="false" key="position.y" targetId="#2">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" keyPath="position.y" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement final="false" key="bounds.size.height" targetId="#2">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" keyPath="bounds.size.height" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement final="false" key="position.y" targetId="#3">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" keyPath="position.y" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement final="false" key="bounds.size.height" targetId="#3">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" keyPath="bounds.size.height" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement final="false" key="hidden" targetId="#5">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" keyPath="hidden" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement final="false" key="position.x" targetId="#5">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" keyPath="position.x" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement final="false" key="bounds.size.width" targetId="#5">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" keyPath="bounds.size.width" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement final="false" key="emitterPosition.x" targetId="#5">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" keyPath="emitterPosition.x" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement final="false" key="emitterPosition.y" targetId="#5">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" keyPath="emitterPosition.y" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement final="false" key="emitterCells.red-yellow.enabled" targetId="#5">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" keyPath="emitterCells.red-yellow.enabled" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement final="false" key="emitterCells.blue.enabled" targetId="#5">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" keyPath="emitterCells.blue.enabled" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement final="false" key="emitterCells.white.enabled" targetId="#5">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" keyPath="emitterCells.white.enabled" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement final="false" key="emitterCells.large.enabled" targetId="#5">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" keyPath="emitterCells.large.enabled" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement final="false" key="emitterSize.width" targetId="#5">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" keyPath="emitterSize.width" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement final="false" key="bounds.size.width" targetId="#1">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" keyPath="bounds.size.width" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement final="false" key="cullRect.origin.x" targetId="#5">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" keyPath="cullRect.origin.x" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement final="false" key="hidden" targetId="#8">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" keyPath="hidden" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement final="false" key="position" targetId="#5">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" keyPath="position" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement final="false" key="position" targetId="#6">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" keyPath="position" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement final="false" key="position" targetId="#9">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" keyPath="position" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement final="false" key="hidden" targetId="#9">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" keyPath="hidden" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement final="false" key="hidden" targetId="#6">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" keyPath="hidden" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	</elements>
+      </LKStateTransition>
+      <LKStateTransition fromState="Landscape" toState="*">
+	<elements>
+	  <LKStateTransitionElement key="position.x" targetId="#1">
+	    <animation type="CASpringAnimation" damping="400" mass="2" stiffness="300" keyPath="position.x" beginTime="1e-100" beginTimeMode="absolute" duration="0.91" fillMode="backwards" removedOnCompletion="1" timingFunction="0.22368 0.002045 0.55342 0.95297"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="position.y" targetId="#1">
+	    <animation type="CASpringAnimation" damping="400" mass="2" stiffness="300" keyPath="position.y" beginTime="1e-100" beginTimeMode="absolute" duration="0.91" fillMode="backwards" removedOnCompletion="1" timingFunction="0.22368 0.002045 0.55342 0.95297"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="transform.scale.xy" targetId="#1">
+	    <animation type="CASpringAnimation" damping="400" mass="2" stiffness="300" keyPath="transform.scale.xy" beginTime="1e-100" beginTimeMode="absolute" duration="0.91" fillMode="backwards" removedOnCompletion="1" timingFunction="0.22368 0.002045 0.55342 0.95297"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="transform.rotation.z" targetId="#1">
+	    <animation type="CASpringAnimation" damping="400" mass="2" stiffness="300" keyPath="transform.rotation.z" beginTime="1e-100" beginTimeMode="absolute" duration="0.91" fillMode="backwards" removedOnCompletion="1" timingFunction="0.22368 0.002045 0.55342 0.95297"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="opacity" targetId="#2">
+	    <animation type="CASpringAnimation" damping="400" mass="2" stiffness="300" keyPath="opacity" beginTime="1e-100" beginTimeMode="absolute" duration="0.91" fillMode="backwards" removedOnCompletion="1" timingFunction="0.22368 0.002045 0.55342 0.95297"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="opacity" targetId="#3">
+	    <animation type="CASpringAnimation" damping="400" mass="2" stiffness="300" keyPath="opacity" beginTime="1e-100" beginTimeMode="absolute" duration="0.91" fillMode="backwards" removedOnCompletion="1" timingFunction="0.22368 0.002045 0.55342 0.95297"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="opacity" targetId="#4">
+	    <animation type="CASpringAnimation" damping="400" mass="2" stiffness="300" keyPath="opacity" beginTime="1e-100" beginTimeMode="absolute" duration="0.91" fillMode="backwards" removedOnCompletion="1" timingFunction="0.22368 0.002045 0.55342 0.95297"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="position.y" targetId="#5">
+	    <animation type="CABasicAnimation" keyPath="position.y" duration="0.25" fillMode="backwards" timingFunction="easeInEaseOut"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="transform.scale.xy" targetId="#5">
+	    <animation type="CABasicAnimation" keyPath="transform.scale.xy" duration="0.25" fillMode="backwards" timingFunction="easeInEaseOut"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="position.y" targetId="#6">
+	    <animation type="CABasicAnimation" keyPath="position.y" duration="0.25" fillMode="backwards" timingFunction="easeInEaseOut"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="transform.scale.xy" targetId="#6">
+	    <animation type="CABasicAnimation" keyPath="transform.scale.xy" duration="0.25" fillMode="backwards" timingFunction="easeInEaseOut"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement final="false" key="bounds.size.height" targetId="#1">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" keyPath="bounds.size.height" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement final="false" key="position.y" targetId="#8">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" keyPath="position.y" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement final="false" key="bounds.size.height" targetId="#8">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" keyPath="bounds.size.height" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement final="false" key="position.y" targetId="#7">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" keyPath="position.y" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement final="false" key="bounds.size.height" targetId="#7">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" keyPath="bounds.size.height" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement final="false" key="position.y" targetId="#2">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" keyPath="position.y" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement final="false" key="bounds.size.height" targetId="#2">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" keyPath="bounds.size.height" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement final="false" key="position.y" targetId="#3">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" keyPath="position.y" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement final="false" key="bounds.size.height" targetId="#3">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" keyPath="bounds.size.height" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement final="false" key="hidden" targetId="#5">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" keyPath="hidden" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement final="false" key="position.x" targetId="#5">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" keyPath="position.x" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement final="false" key="bounds.size.width" targetId="#5">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" keyPath="bounds.size.width" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement final="false" key="emitterPosition.x" targetId="#5">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" keyPath="emitterPosition.x" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement final="false" key="emitterPosition.y" targetId="#5">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" keyPath="emitterPosition.y" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement final="false" key="emitterCells.red-yellow.enabled" targetId="#5">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" keyPath="emitterCells.red-yellow.enabled" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement final="false" key="emitterCells.blue.enabled" targetId="#5">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" keyPath="emitterCells.blue.enabled" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement final="false" key="emitterCells.white.enabled" targetId="#5">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" keyPath="emitterCells.white.enabled" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement final="false" key="emitterCells.large.enabled" targetId="#5">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" keyPath="emitterCells.large.enabled" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement final="false" key="emitterSize.width" targetId="#5">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" keyPath="emitterSize.width" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement final="false" key="bounds.size.width" targetId="#1">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" keyPath="bounds.size.width" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement final="false" key="cullRect.origin.x" targetId="#5">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" keyPath="cullRect.origin.x" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement final="false" key="hidden" targetId="#8">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" keyPath="hidden" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement final="false" key="position" targetId="#5">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" keyPath="position" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement final="false" key="position" targetId="#6">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" keyPath="position" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement final="false" key="position" targetId="#9">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" keyPath="position" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement final="false" key="hidden" targetId="#9">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" keyPath="hidden" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement final="false" key="hidden" targetId="#6">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" keyPath="hidden" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	</elements>
+      </LKStateTransition>
+    </stateTransitions>
+  </CALayer>
+</caml>

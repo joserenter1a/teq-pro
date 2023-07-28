@@ -1,0 +1,259 @@
+<?xml version='1.0' encoding='utf-8'?>
+<caml xmlns="http://www.apple.com/CoreAnimation/1.0">
+  <CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 828 1792" clearsContext="1" contentsFormat="RGBA8" edgeAntialiasingMask="0" name="Root Layer" position="414 896">
+    <sublayers>
+      <CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" anchorPoint="0 1" bounds="0 0 640 1136" contentsFormat="RGBA8" id="#1" masksToBounds="0" name="Rotation" position="0 2688" transform="scale(1.578, 1.578, 1)">
+	<sublayers>
+	  <CALayer allowsEdgeAntialiasing="0" allowsGroupBlending="0" allowsGroupOpacity="0" bounds="0 0 400 400" contentsFormat="RGBA8" hidden="0" name="Rain Tile Medium" position="320 568">
+	    <sublayers>
+	      <CALayer allowsEdgeAntialiasing="0" allowsGroupBlending="0" allowsGroupOpacity="0" bounds="0 0 1000 4000" contentsFormat="RGBA8" contentsScale="1" contentsScaling="repeat" id="#5" name="Tile" opacity="0.06069711595774" position="200 200" transform="scale(0.75, 0.75, 1)">
+		<contents src="assets/Raindrop-Tile-Heavy.heic" type="CGImage" />
+		<animations>
+		  <p beginTime="1e-100" duration="0.6000000238419" fillMode="both" key="animation-1" keyPath="position.y" removedOnCompletion="0" repeatCount="Inf" type="CAKeyframeAnimation">
+		    <keyTimes>
+		      <integer value="0" />
+		      <integer value="1" />
+		    </keyTimes>
+		    <values>
+		      <real value="187.5" />
+		      <real value="-187.5" />
+		    </values>
+		  </p>
+		</animations>
+	      </CALayer>
+	    </sublayers>
+	  </CALayer>
+	  <CAEmitterLayer allowsEdgeAntialiasing="0" allowsGroupBlending="0" allowsGroupOpacity="0" beginTime="-100" birthRate="2" bounds="0 0 640 1136" contentsFormat="RGBA8" cullRect="-10 -10 660 1.797693134862e308" emitterPosition="320 1146" emitterShape="line" emitterSize="700 0" geometryFlipped="0" hidden="0" id="#6" name="__Emitter_2D_0" position="320 568" preservesDepth="1" renderMode="backToFront" speed="1">
+	    <emitterBehaviors>
+	      <CAEmitterBehavior behavior="wave" force="-50 0 0" frequency="0.5" name="wave" />
+	      <CAEmitterBehavior additive="0" attractorType="axial" behavior="valueOverDistance" falloff="1136" falloffDistance="0" keyPath="color.alpha" name="valueOverDistance" orientationLatitude="-1.570796370506" orientationLongitude="0" position="0 1136" zPosition="0">
+		<values>
+		  <real value="0.3499999940395" />
+		  <integer value="1" />
+		  <integer value="0" />
+		</values>
+		<stiffness type="integer" value="1" />
+		<radius type="integer" value="0" />
+	      </CAEmitterBehavior>
+	    </emitterBehaviors>
+	    <emitterCells>
+	      <CAEmitterCell alphaRange="0.1800000071526" alphaSpeed="0" birthRate="50" contentsScale="1" emissionLatitude="0" emissionLongitude="0" emissionRange="0.3839724361897" enabled="1" lifetime="6" mass="6" massRange="2" name="med" particleType="sprite" scale="0.6000000238419" scaleRange="0.5" scaleSpeed="0" velocity="250" velocityRange="150" xAcceleration="0" yAcceleration="50">
+		<color opacity="0.4553" value="1 1 1" />
+		<contents src="assets/Wintery-Mix-Flake-7x7.heic" type="CGImage" />
+	      </CAEmitterCell>
+	      <CAEmitterCell alphaRange="0.1800000071526" alphaSpeed="0" birthRate="50" contentsScale="1" emissionLatitude="0" emissionLongitude="0" emissionRange="0.3839724361897" enabled="1" lifetime="6" mass="6" massRange="2" name="med_bright" particleType="sprite" rotation="0" scale="0.6000000238419" scaleRange="0.5" scaleSpeed="0" velocity="250" velocityRange="150" xAcceleration="0" yAcceleration="50">
+		<color opacity="0.5427" value="1 1 1" />
+		<contents src="assets/Wintery-Mix-Flake-7x7.heic" type="CGImage" />
+	      </CAEmitterCell>
+	      <CAEmitterCell alphaRange="0.5" birthRate="500" contentsFrameCount="9" contentsFrameMode="random" contentsFramesPerRow="3" contentsRect="0 0 1 1" enabled="1" lifetime="2" name="Hail Small 1" rotation="0" rotationRange="0" scale="0.07000000029802" scaleRange="0.05000000074506" velocity="800" velocityRange="600">
+		<color opacity="0.5356" value="1 1 1" />
+		<contents src="assets/Flake-Motion-Blurred.heic" type="CGImage" />
+	      </CAEmitterCell>
+	      <CAEmitterCell alphaRange="0.3000000119209" birthRate="25" contentsFrameCount="9" contentsFrameMode="single" contentsFramesPerRow="3" contentsRect="0 0 1 1" enabled="1" lifetime="2" name="Hail Large 1" rotation="0" rotationRange="0" scale="0.1800000071526" scaleRange="0.07999999821186" velocity="1500" velocityRange="800">
+		<color opacity="0.4801" value="1 1 1" />
+		<contents src="assets/Flake-Motion-Blurred.heic" type="CGImage" />
+	      </CAEmitterCell>
+	    </emitterCells>
+	    <animations>
+	      <p beginTime="1e-100" duration="66.377278217988" enabled="1" fillMode="both" key="animation-4" keyPath="emitterCells.med_bright.xAcceleration" removedOnCompletion="0" repeatCount="Inf" type="CAKeyframeAnimation">
+		<keyTimes>
+		  <integer value="0" />
+		  <real value="0.07532698137425" />
+		  <real value="0.1506539627485" />
+		  <real value="0.2259809441228" />
+		  <real value="0.301307925497" />
+		  <integer value="1" />
+		</keyTimes>
+		<values>
+		  <integer value="0" />
+		  <integer value="50" />
+		  <integer value="0" />
+		  <integer value="-50" />
+		  <integer value="0" />
+		  <integer value="0" />
+		</values>
+	      </p>
+	      <p beginTime="1e-100" duration="66.377278217988" enabled="1" fillMode="both" key="animation-1" keyPath="emitterCells.med.xAcceleration" removedOnCompletion="0" repeatCount="Inf" type="CAKeyframeAnimation">
+		<keyTimes>
+		  <integer value="0" />
+		  <real value="0.07532698137425" />
+		  <real value="0.1506539627485" />
+		  <real value="0.2259809441228" />
+		  <real value="0.301307925497" />
+		  <integer value="1" />
+		</keyTimes>
+		<values>
+		  <integer value="0" />
+		  <integer value="50" />
+		  <integer value="0" />
+		  <integer value="-50" />
+		  <integer value="0" />
+		  <integer value="0" />
+		</values>
+	      </p>
+	    </animations>
+	  </CAEmitterLayer>
+	  <CALayer allowsEdgeAntialiasing="0" allowsGroupBlending="0" allowsGroupOpacity="0" bounds="0 0 640 864" contentsFormat="RGBA8" hidden="0" name="Background-Glow-Day.heic" position="320 704">
+	    <contents src="assets/Background-Glow-Day.heic" type="CGImage" />
+	  </CALayer>
+	  </sublayers>
+      </CALayer>
+    </sublayers>
+    <states>
+      <LKState basedOn="" name="Full" />
+      <LKState basedOn="Full" name="Landscape">
+	<elements>
+	  <LKStateSetValue keyPath="transform.scale.xy" targetId="#1">
+	    <value type="real" value="2.8" />
+	  </LKStateSetValue>
+	  <LKStateSetValue keyPath="opacity" targetId="#2">
+	    <value type="integer" value="0" />
+	  </LKStateSetValue>
+	  <LKStateSetValue keyPath="opacity" targetId="#3">
+	    <value type="integer" value="0" />
+	  </LKStateSetValue>
+	  <LKStateSetValue keyPath="opacity" targetId="#4">
+	    <value type="integer" value="0" />
+	  </LKStateSetValue>
+	  <LKStateSetValue keyPath="contentsScale" targetId="#5">
+	    <value type="integer" value="2" />
+	  </LKStateSetValue>
+	  <LKStateSetValue keyPath="speed" targetId="#6">
+	    <value type="real" value="0.563000023365" />
+	  </LKStateSetValue>
+	  <LKStateSetValue keyPath="emitterCells.med_bright.rotation" targetId="#6">
+	    <value type="real" value="1.570796370506" />
+	  </LKStateSetValue>
+	  <LKStateSetValue keyPath="emitterCells.Hail Small 1.rotation" targetId="#6">
+	    <value type="real" value="1.570796370506" />
+	  </LKStateSetValue>
+	  <LKStateSetValue keyPath="emitterCells.Hail Large 1.rotation" targetId="#6">
+	    <value type="real" value="1.570796370506" />
+	  </LKStateSetValue>
+	  <LKStateSetValue keyPath="birthRate" targetId="#6">
+	    <value type="integer" value="6" />
+	  </LKStateSetValue>
+	</elements>
+      </LKState>
+      <LKState name="Mini">
+	<elements>
+	  <LKStateSetValue keyPath="cullRect.origin.y" targetId="#6">
+	    <value type="integer" value="856" />
+	  </LKStateSetValue>
+	  <LKStateRemoveElement keyPath="sublayers" targetId="#1">
+	    <object allowsEdgeAntialiasing="0" allowsGroupBlending="0" allowsGroupOpacity="0" bounds="0 0 640 1136" contentsFormat="RGBA8" hidden="0" id="#7" name="light" position="320 568" type="CALayer">
+	      <sublayers>
+		<CALayer allowsEdgeAntialiasing="0" allowsGroupBlending="0" allowsGroupOpacity="0" bounds="0 0 640 864" contentsFormat="RGBA8" hidden="0" id="#8" name="Background-Glow-Day.heic" position="320 704" />
+	      </sublayers>
+	      <states>
+		<LKState initial="true" name="day">
+		  <elements>
+		    <LKStateAddElement final="false" keyPath="sublayers" objectId="#8" targetId="#7" />
+		  </elements>
+		</LKState>
+		<LKState name="night">
+		  <elements>
+		    <LKStateAddElement final="false" keyPath="sublayers" targetId="#7">
+		      <object allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 640 977" contentsFormat="RGBA8" name="Background-Glow-Night.heic" position="320 647.5" type="CALayer">
+			<sublayers>
+			  <CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 640 977" contentsFormat="RGBA8" name="Background-Glow-Night.heic" position="320 488.5">
+			    <contents src="assets/Background-Glow-Night.heic" type="CGImage" />
+			  </CALayer>
+			</sublayers>
+		      </object>
+		    </LKStateAddElement>
+		  </elements>
+		</LKState>
+	      </states>
+	      <stateTransitions />
+	    </object>
+	  </LKStateRemoveElement>
+	  <LKStateRemoveAnimation key="animation-1" targetId="#6" />
+	  <LKStateRemoveAnimation key="animation-4" targetId="#6" />
+	  <LKStateRemoveElement keyPath="emitterCells" targetId="#6">
+	    <object alphaRange="0.1800000071526" alphaSpeed="0" birthRate="250" contentsScale="1" emissionLatitude="0" emissionLongitude="0" emissionRange="0.3839724361897" enabled="1" lifetime="6" mass="6" massRange="2" name="med" particleType="sprite" scale="0.6000000238419" scaleRange="0.5" scaleSpeed="0" type="CAEmitterCell" velocity="250" velocityRange="150" xAcceleration="-1.420709583908" yAcceleration="50">
+	      <color opacity="0.2" value="1 1 1" />
+	      <contents src="assets/Wintery-Mix-Flake-7x7.heic" type="CGImage" />
+	    </object>
+	  </LKStateRemoveElement>
+	  <LKStateRemoveElement keyPath="emitterCells" targetId="#6">
+	    <object alphaRange="0.3000000119209" birthRate="25" contentsFrameCount="9" contentsFrameMode="single" contentsFramesPerRow="3" contentsRect="0 0 1 1" enabled="1" lifetime="2" name="Hail Large 1" rotationRange="0" scale="0.1800000071526" scaleRange="0.07999999821186" type="CAEmitterCell" velocity="1500" velocityRange="800">
+	      <color opacity="0.3" value="1 1 1" />
+	      <contents src="assets/Flake-Motion-Blurred.heic" type="CGImage" />
+	    </object>
+	  </LKStateRemoveElement>
+	  <LKStateSetValue keyPath="emitterCells.med_bright.birthRate" targetId="#6">
+	    <value type="integer" value="35" />
+	  </LKStateSetValue>
+	  <LKStateSetValue keyPath="emitterCells.Hail Small 1.birthRate" targetId="#6">
+	    <value type="integer" value="350" />
+	  </LKStateSetValue>
+	</elements>
+      </LKState>
+    </states>
+    <stateTransitions>
+      <LKStateTransition fromState="*" toState="Landscape">
+	<elements>
+	  <LKStateTransitionElement key="transform.scale.xy" targetId="#1">
+	    <animation beginTime="1e-100" beginTimeMode="absolute" damping="400" duration="0.910000026226" fillMode="backwards" keyPath="transform.scale.xy" mass="2" removedOnCompletion="1" stiffness="300" timingFunction="0.22368 0.002045 0.55342 0.95297" type="CASpringAnimation" />
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="opacity" targetId="#2">
+	    <animation beginTime="1e-100" beginTimeMode="absolute" damping="400" duration="0.910000026226" fillMode="backwards" keyPath="opacity" mass="2" removedOnCompletion="1" stiffness="300" timingFunction="0.22368 0.002045 0.55342 0.95297" type="CASpringAnimation" />
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="opacity" targetId="#3">
+	    <animation beginTime="1e-100" beginTimeMode="absolute" damping="400" duration="0.910000026226" fillMode="backwards" keyPath="opacity" mass="2" removedOnCompletion="1" stiffness="300" timingFunction="0.22368 0.002045 0.55342 0.95297" type="CASpringAnimation" />
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="opacity" targetId="#4">
+	    <animation beginTime="1e-100" beginTimeMode="absolute" damping="400" duration="0.910000026226" fillMode="backwards" keyPath="opacity" mass="2" removedOnCompletion="1" stiffness="300" timingFunction="0.22368 0.002045 0.55342 0.95297" type="CASpringAnimation" />
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="contentsScale" targetId="#5">
+	    <animation duration="0.25" fillMode="backwards" keyPath="contentsScale" timingFunction="easeInEaseOut" type="CABasicAnimation" />
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="birthRate" targetId="#6">
+	    <animation duration="0.25" fillMode="backwards" keyPath="birthRate" timingFunction="easeInEaseOut" type="CABasicAnimation" />
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="emitterCells.med_bright.rotation" targetId="#6">
+	    <animation duration="0.25" fillMode="backwards" keyPath="emitterCells.med_bright.rotation" timingFunction="easeInEaseOut" type="CABasicAnimation" />
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="emitterCells.Hail Small 1.rotation" targetId="#6">
+	    <animation duration="0.25" fillMode="backwards" keyPath="emitterCells.Hail Small 1.rotation" timingFunction="easeInEaseOut" type="CABasicAnimation" />
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="emitterCells.Hail Large 1.rotation" targetId="#6">
+	    <animation duration="0.25" fillMode="backwards" keyPath="emitterCells.Hail Large 1.rotation" timingFunction="easeInEaseOut" type="CABasicAnimation" />
+	  </LKStateTransitionElement>
+	</elements>
+      </LKStateTransition>
+      <LKStateTransition fromState="Landscape" toState="*">
+	<elements>
+	  <LKStateTransitionElement key="transform.scale.xy" targetId="#1">
+	    <animation beginTime="1e-100" beginTimeMode="absolute" damping="400" duration="0.910000026226" fillMode="backwards" keyPath="transform.scale.xy" mass="2" removedOnCompletion="1" stiffness="300" timingFunction="0.22368 0.002045 0.55342 0.95297" type="CASpringAnimation" />
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="opacity" targetId="#2">
+	    <animation beginTime="1e-100" beginTimeMode="absolute" damping="400" duration="0.910000026226" fillMode="backwards" keyPath="opacity" mass="2" removedOnCompletion="1" stiffness="300" timingFunction="0.22368 0.002045 0.55342 0.95297" type="CASpringAnimation" />
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="opacity" targetId="#3">
+	    <animation beginTime="1e-100" beginTimeMode="absolute" damping="400" duration="0.910000026226" fillMode="backwards" keyPath="opacity" mass="2" removedOnCompletion="1" stiffness="300" timingFunction="0.22368 0.002045 0.55342 0.95297" type="CASpringAnimation" />
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="opacity" targetId="#4">
+	    <animation beginTime="1e-100" beginTimeMode="absolute" damping="400" duration="0.910000026226" fillMode="backwards" keyPath="opacity" mass="2" removedOnCompletion="1" stiffness="300" timingFunction="0.22368 0.002045 0.55342 0.95297" type="CASpringAnimation" />
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="contentsScale" targetId="#5">
+	    <animation duration="0.25" fillMode="backwards" keyPath="contentsScale" timingFunction="easeInEaseOut" type="CABasicAnimation" />
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="birthRate" targetId="#6">
+	    <animation duration="0.25" fillMode="backwards" keyPath="birthRate" timingFunction="easeInEaseOut" type="CABasicAnimation" />
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="emitterCells.med_bright.rotation" targetId="#6">
+	    <animation duration="0.25" fillMode="backwards" keyPath="emitterCells.med_bright.rotation" timingFunction="easeInEaseOut" type="CABasicAnimation" />
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="emitterCells.Hail Small 1.rotation" targetId="#6">
+	    <animation duration="0.25" fillMode="backwards" keyPath="emitterCells.Hail Small 1.rotation" timingFunction="easeInEaseOut" type="CABasicAnimation" />
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="emitterCells.Hail Large 1.rotation" targetId="#6">
+	    <animation duration="0.25" fillMode="backwards" keyPath="emitterCells.Hail Large 1.rotation" timingFunction="easeInEaseOut" type="CABasicAnimation" />
+	  </LKStateTransitionElement>
+	</elements>
+      </LKStateTransition>
+    </stateTransitions>
+  </CALayer>
+</caml>
