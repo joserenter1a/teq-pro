@@ -1,0 +1,973 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<caml xmlns="http://www.apple.com/CoreAnimation/1.0">
+  <CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" backgroundColor="0 0 0" bounds="0 0 2048 2732" clearsContext="1" contentsFormat="RGBA8" edgeAntialiasingMask="0" hidden="0" name="Root Layer" position="1024 1366">
+    <sublayers>
+      <CALayer id="#1" allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 943.875717163086 1136" clearsContext="1" contentsFormat="RGBA8" masksToBounds="0" name="Rotation" position="1013.639999389648 1389" transform="scale(2.446, 2.446, 1)">
+	<sublayers>
+	  <CAGradientLayer id="#13" allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 950.417007446289 1136" contentsFormat="RGBA8" hidden="0" name="__Background" position="475.208511352539 568">
+	    <colors>
+	      <CGColor value="0.246 0.2748 0.3"/>
+	      <CGColor value="0.332 0.3637 0.4"/>
+	      <CGColor value="0.4954 0.5196 0.5514"/>
+	    </colors>
+	    <locations>
+	      <integer value="0"/>
+	      <real value="0.345"/>
+	      <integer value="1"/>
+	    </locations>
+	  </CAGradientLayer>
+	  <CAEmitterLayer id="#5" cullRect="-Inf -8.988465674312e307 1.797693134862e308 1.797693134862e308" emitterMode="surface" emitterPosition="320 24" emitterShape="rectangle" emitterSize="786 64" allowsEdgeAntialiasing="0" allowsGroupOpacity="1" anchorPoint="0 0.5" bounds="0 0 912.804580688477 48" contentsFormat="RGBA8" hidden="0" name=" Rain Strands" position="867.804580688477 863" timeOffset="30" transform="rotate(180deg, 0, 1, 0)">
+	    <emitterBehaviors>
+	      <CAEmitterBehavior behavior="valueOverLife" name="valueOverLife" additive="0" keyPath="scale">
+		<values>
+		  <real value="0.563"/>
+		  <real value="0.563"/>
+		</values>
+	      </CAEmitterBehavior>
+	    </emitterBehaviors>
+	    <emitterCells>
+	      <CAEmitterCell alphaRange="1" alphaSpeed="0" birthRate="100" blueRange="1" blueSpeed="1" color="1 1 1" contentsFrameCount="4" contentsFrameMode="random" contentsRect="0 0 0.25 1" emissionLatitude="0" emissionLongitude="-0.785398" enabled="1" greenRange="1" greenSpeed="1" lifetime="6" name="Strands" redRange="1" redSpeed="1" rotation="-0.349066" rotationRange="0.261799" scale="1" scaleRange="0.5" spinRange="0" timeOffset="0" velocity="20" velocityRange="10" yAcceleration="0">
+		<contents type="CGImage" relativePath="/assets/Cloud-Hurricane-Strands.heic" src="assets/Cloud-Hurricane-Strands.heic"/>
+		<emitterBehaviors>
+		  <CAEmitterBehavior behavior="valueOverDistance" name="valueOverDistance" enabled="0" additive="0" position="0 0" orientationLongitude="-1.5708" falloff="inf" falloffDistance="0" attractorType="radial" orientationLatitude="1.5708" zPosition="0">
+		    <radius type="integer" value="0"/>
+		    <stiffness type="integer" value="1"/>
+		  </CAEmitterBehavior>
+		  <CAEmitterBehavior behavior="valueOverLife" name="valueOverLife" additive="0" keyPath="color.alpha">
+		    <values>
+		      <integer value="0"/>
+		      <real value="0.2"/>
+		      <integer value="0"/>
+		    </values>
+		  </CAEmitterBehavior>
+		</emitterBehaviors>
+	      </CAEmitterCell>
+	    </emitterCells>
+	  </CAEmitterLayer>
+	  <CALayer id="#10" allowsEdgeAntialiasing="0" allowsGroupOpacity="1" anchorPoint="0.5 0.9900000095367" bounds="0 0 783.917709350586 320" contentsFormat="RGBA8" hidden="0" name="⛅ Scaled" opaque="0" position="475 1136" transform="matrix(1.000450911105 -4.509111046352e-4 0 1.409097201985e-6 0.00111107314376 1.000675838246 0 -0.002223882339327 0 0 1 0 0.4998349594886 0.07197668507825 0 0.2888085625201)">
+	    <sublayers>
+	      <CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" anchorPoint="0 0" bounds="0 0 2017.578567504883 320" contentsFormat="RGBA8" contentsScaling="repeat" hidden="0" name="⛅ Tile --night uses multiply color" position="-1191.630325317383 -0.03125">
+		<contents type="CGImage" relativePath="/assets/Cloud-Hurricane.heic" src="assets/Cloud-Hurricane.heic"/>
+		<animations>
+		  <p key="animation-1" type="CAKeyframeAnimation" keyPath="position.x" beginTime="1e-100" duration="90" fillMode="both" removedOnCompletion="0" repeatCount="inf">
+		    <keyTimes>
+		      <integer value="0"/>
+		      <integer value="1"/>
+		    </keyTimes>
+		    <values>
+		      <integer value="0"/>
+		      <integer value="-1280"/>
+		    </values>
+		  </p>
+		</animations>
+	      </CALayer>
+	    </sublayers>
+	  </CALayer>
+	  <CAEmitterLayer id="#11" cullRect="-450 -8.988465674312e307 1.797693134862e308 1.797693134862e308" emitterPosition="2000 682" emitterShape="rectangle" emitterSize="0 400" allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 952.052337646484 1136" contentsFormat="RGBA8" hidden="0" name="Foglet" position="476.026168823242 568">
+	    <emitterCells>
+	      <CAEmitterCell alphaRange="0.25" birthRate="0.5" lifetime="20" name="Cell 1" scale="0.75" spinRange="1.5708" velocity="-400" velocityRange="200">
+		<color opacity="0.25" value="0 0 0"/>
+		<contents type="CGImage" relativePath="/assets/Cloud-Patch-Two.heic" src="assets/Cloud-Patch-Two.heic"/>
+	      </CAEmitterCell>
+	    </emitterCells>
+	  </CAEmitterLayer>
+	  <CATransformLayer id="#6" allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 953.687652587891 1136" contentsFormat="RGBA8" hidden="0" name="NULL" position="476.843826293945 568" transform="">
+	    <sublayers>
+	      <CAEmitterLayer id="#7" emitterPosition="0 400" emitterShape="cuboid" emitterSize="0 800" lifetime="1" allowsEdgeAntialiasing="0" allowsGroupOpacity="1" beginTime="-100" bounds="0 0 64 800" contentsFormat="RGBA8" hidden="0" name=" Long" position="-32 400.25" timeOffset="0.123" transform="rotate(180deg, 0, 1, 0)">
+		<emitterCells>
+		  <CAEmitterCell alphaRange="0.5" alphaSpeed="0" birthRate="2" blueRange="0.1" enabled="1" greenRange="0.1" lifetime="0.8" name="Leaves" orientationLatitude="0" redRange="0.1" scale="2" scaleRange="1" spinRange="12.5664" velocity="1600" velocityRange="1200" xAcceleration="0" yAcceleration="0">
+		    <color opacity="0.3324" value="1 1 1"/>
+		    <contents type="CGImage" relativePath="/assets/Debris-Leaves.heic" src="assets/Debris-Leaves.heic"/>
+		    <emitterBehaviors>
+		      <CAEmitterBehavior behavior="wave" name="wave" frequency="4" force="1000 0 0"/>
+		      <CAEmitterBehavior behavior="wave" name="wave 2" enabled="0" frequency="2.01728" force="0 3000 0"/>
+		      <CAEmitterBehavior behavior="wave" name="wave 3" frequency="1" force="0 -2000 0"/>
+		      <CAEmitterBehavior behavior="wave" name="wave 4" enabled="0" force="0 1500 0" frequency="2.917"/>
+		      <CAEmitterBehavior behavior="wave" name="wave 5" enabled="0" force="0 -8662 0" frequency="2.907"/>
+		    </emitterBehaviors>
+		  </CAEmitterCell>
+		  <CAEmitterCell birthRate="300" enabled="1" lifetime="0.8" name="Water" scale="1" scaleRange="0.5" spinRange="0.174533" velocity="1200" velocityRange="200" yAcceleration="-500">
+		    <color opacity="0.5748" value="1 1 1"/>
+		    <contents type="CGImage" relativePath="/assets/Spray.heic" src="assets/Spray.heic"/>
+		    <emitterBehaviors>
+		      <CAEmitterBehavior behavior="wave" name="wave" enabled="0" frequency="8" force="1000 0 0"/>
+		      <CAEmitterBehavior behavior="wave" name="wave 2" enabled="0" frequency="6" force="0 5000 0"/>
+		      <CAEmitterBehavior behavior="wave" name="wave 3" enabled="0" frequency="5.2" force="0 -5000 0"/>
+		    </emitterBehaviors>
+		  </CAEmitterCell>
+		  <CAEmitterCell alphaRange="-0.25" alphaSpeed="0" birthRate="8" enabled="1" lifetime="0.8" name="Bark" orientationLatitude="0" scale="2" scaleRange="1" spinRange="25.1327" velocity="1600" velocityRange="1200" xAcceleration="0" yAcceleration="0">
+		    <color opacity="0.2587" value="1 1 1"/>
+		    <contents type="CGImage" relativePath="/assets/Debris-Bark.heic" src="assets/Debris-Bark.heic"/>
+		    <emitterBehaviors>
+		      <CAEmitterBehavior behavior="wave" name="wave" frequency="4" force="1000 0 0"/>
+		      <CAEmitterBehavior behavior="wave" name="wave 2" enabled="0" frequency="2.01728" force="0 3000 0"/>
+		      <CAEmitterBehavior behavior="wave" name="wave 3" frequency="1" force="0 -2000 0"/>
+		      <CAEmitterBehavior behavior="wave" name="wave 4" enabled="0" force="0 1500 0" frequency="2.917"/>
+		      <CAEmitterBehavior behavior="wave" name="wave 5" enabled="0" force="0 -8662 0" frequency="2.907"/>
+		    </emitterBehaviors>
+		  </CAEmitterCell>
+		</emitterCells>
+		<backgroundColor opacity="0" value="1 0.1491 0"/>
+		<animations>
+		  <p key="animation-2" type="CAKeyframeAnimation" keyPath="position" autoreverses="1" beginTime="1e-100" duration="0.7252" fillMode="both" removedOnCompletion="0" repeatCount="inf" timeOffset="0" timingFunction="easeInEaseOut">
+		    <keyTimes>
+		      <integer value="0"/>
+		      <integer value="1"/>
+		    </keyTimes>
+		    <values>
+		      <CGPoint value="862 581.531067252159"/>
+		      <CGPoint value="862 481.531067252159"/>
+		    </values>
+		  </p>
+		</animations>
+	      </CAEmitterLayer>
+	      <CAEmitterLayer id="#8" emitterPosition="0 200" emitterShape="cuboid" emitterSize="0 400" lifetime="1" allowsEdgeAntialiasing="0" allowsGroupOpacity="1" beginTime="-100" bounds="0 0 64 400" contentsFormat="RGBA8" hidden="0" name=" Medium" position="-32 400.25" timeOffset="0.234" transform="rotate(180deg, 0, 1, 0)">
+		<emitterCells>
+		  <CAEmitterCell birthRate="20" enabled="1" lifetime="0.8" name="Spray" scaleRange="0.9" spinRange="0.174533" velocity="1600" velocityRange="400">
+		    <color opacity="0.3776" value="1 1 1"/>
+		    <contents type="CGImage" relativePath="/assets/Spray-Cluster.heic" src="assets/Spray-Cluster.heic"/>
+		    <emitterBehaviors>
+		      <CAEmitterBehavior behavior="wave" name="wave" enabled="0" force="999.960021972656 0 0" frequency="7.99"/>
+		      <CAEmitterBehavior behavior="wave" name="wave 2" enabled="0" force="0 5000 0" frequency="6.02"/>
+		      <CAEmitterBehavior behavior="wave" name="wave 3" force="0 -5000.0498046875 0" frequency="5.26"/>
+		    </emitterBehaviors>
+		  </CAEmitterCell>
+		  <CAEmitterCell alphaRange="-0.5" alphaSpeed="0" birthRate="2" enabled="1" lifetime="0.8" name="Leaves" orientationLatitude="0" scale="1" scaleRange="1" spinRange="12.5664" velocity="1600" velocityRange="1200" xAcceleration="0" yAcceleration="0">
+		    <color opacity="0.3467" value="1 1 1"/>
+		    <contents type="CGImage" relativePath="/assets/Debris-Leaves.heic" src="assets/Debris-Leaves.heic"/>
+		    <emitterBehaviors>
+		      <CAEmitterBehavior behavior="wave" name="wave" force="999.969970703125 0 0" frequency="3.95"/>
+		      <CAEmitterBehavior behavior="wave" name="wave 2" enabled="0" force="0 3000.090087890625 0" frequency="2.0473"/>
+		      <CAEmitterBehavior behavior="wave" name="wave 3" force="0 -2000.06005859375 0" frequency="1"/>
+		      <CAEmitterBehavior behavior="wave" name="wave 4" enabled="0" frequency="2.897" force="0 1499.9599609375 0"/>
+		      <CAEmitterBehavior behavior="wave" name="wave 5" enabled="0" frequency="2.827" force="0 -8662.0400390625 0"/>
+		    </emitterBehaviors>
+		  </CAEmitterCell>
+		  <CAEmitterCell birthRate="300" enabled="1" lifetime="0.8" name="Water" scale="1" scaleRange="0.5" spinRange="0.174533" velocity="1200" velocityRange="200" yAcceleration="-500">
+		    <color opacity="0.5748" value="1 1 1"/>
+		    <contents type="CGImage" relativePath="/assets/Spray.heic" src="assets/Spray.heic"/>
+		    <emitterBehaviors>
+		      <CAEmitterBehavior behavior="wave" name="wave" enabled="0" force="1000 0 0" frequency="8"/>
+		      <CAEmitterBehavior behavior="wave" name="wave 2" enabled="0" force="0 5000 0" frequency="6"/>
+		      <CAEmitterBehavior behavior="wave" name="wave 3" enabled="0" force="0 -5000 0" frequency="5.2"/>
+		    </emitterBehaviors>
+		  </CAEmitterCell>
+		  <CAEmitterCell alphaRange="-0.25" alphaSpeed="0" birthRate="8" enabled="1" lifetime="0.8" name="Bark" orientationLatitude="0" scale="2" scaleRange="1" spinRange="25.1327" velocity="1600" velocityRange="1200" xAcceleration="0" yAcceleration="0">
+		    <color opacity="0.2587" value="1 1 1"/>
+		    <contents type="CGImage" relativePath="/assets/Debris-Bark.heic" src="assets/Debris-Bark.heic"/>
+		    <emitterBehaviors>
+		      <CAEmitterBehavior behavior="wave" name="wave" force="1000 0 0" frequency="4"/>
+		      <CAEmitterBehavior behavior="wave" name="wave 2" enabled="0" force="0 3000.070068359375 0" frequency="1.7973"/>
+		      <CAEmitterBehavior behavior="wave" name="wave 3" enabled="0" force="0 -2000.530151367187 0" frequency="1"/>
+		      <CAEmitterBehavior behavior="wave" name="wave 4" frequency="3.177" force="0 1500.25 0"/>
+		      <CAEmitterBehavior behavior="wave" name="wave 5" enabled="0" frequency="2.867" force="0 -8661.7998046875 0"/>
+		    </emitterBehaviors>
+		  </CAEmitterCell>
+		</emitterCells>
+		<backgroundColor opacity="0" value="1 0.1491 0"/>
+		<animations>
+		  <p key="animation-2" type="CAKeyframeAnimation" keyPath="position" autoreverses="1" beginTime="1e-100" duration="1.13515" fillMode="both" removedOnCompletion="0" repeatCount="inf" timingFunction="easeInEaseOut">
+		    <keyTimes>
+		      <integer value="0"/>
+		      <integer value="1"/>
+		    </keyTimes>
+		    <values>
+		      <CGPoint value="862 356.898868560791"/>
+		      <CGPoint value="862 456.898868560791"/>
+		    </values>
+		  </p>
+		</animations>
+	      </CAEmitterLayer>
+	      <CAEmitterLayer id="#9" emitterPosition="0 100" emitterShape="cuboid" emitterSize="0 200" lifetime="1" allowsEdgeAntialiasing="0" allowsGroupOpacity="1" beginTime="-100" bounds="0 0 64 200" contentsFormat="RGBA8" hidden="0" name=" Short" position="-32 400.25" transform="rotate(180deg, 0, 1, 0)">
+		<emitterCells>
+		  <CAEmitterCell birthRate="20" enabled="1" lifetime="0.8" name="Spray" scaleRange="0.9" spinRange="0.174533" velocity="1600" velocityRange="400">
+		    <color opacity="0.3776" value="1 1 1"/>
+		    <contents type="CGImage" relativePath="/assets/Spray-Cluster.heic" src="assets/Spray-Cluster.heic"/>
+		    <emitterBehaviors>
+		      <CAEmitterBehavior behavior="wave" name="wave" frequency="8.02" force="999.960021972656 0 0"/>
+		      <CAEmitterBehavior behavior="wave" name="wave 2" enabled="0" frequency="6.12" force="0 4999.77978515625 0"/>
+		      <CAEmitterBehavior behavior="wave" name="wave 3" enabled="0" frequency="6.33" force="0 -4999.93994140625 0"/>
+		    </emitterBehaviors>
+		  </CAEmitterCell>
+		  <CAEmitterCell birthRate="300" enabled="1" lifetime="0.8" name="Water" scale="1" scaleRange="0.5" spinRange="0.174533" velocity="1200" velocityRange="200" yAcceleration="-500">
+		    <color opacity="0.5748" value="1 1 1"/>
+		    <contents type="CGImage" relativePath="/assets/Spray.heic" src="assets/Spray.heic"/>
+		    <emitterBehaviors>
+		      <CAEmitterBehavior behavior="wave" name="wave" enabled="0" frequency="8" force="1000 0 0"/>
+		      <CAEmitterBehavior behavior="wave" name="wave 2" enabled="0" frequency="6" force="0 5000 0"/>
+		      <CAEmitterBehavior behavior="wave" name="wave 3" enabled="0" frequency="5.2" force="0 -5000 0"/>
+		    </emitterBehaviors>
+		  </CAEmitterCell>
+		  <CAEmitterCell alphaRange="-0.25" alphaSpeed="0" birthRate="8" enabled="1" lifetime="0.8" name="Bark" orientationLatitude="0" scale="2" scaleRange="1" spinRange="25.1327" velocity="1600" velocityRange="1200" xAcceleration="0" yAcceleration="0">
+		    <color opacity="0.1942" value="1 1 1"/>
+		    <contents type="CGImage" relativePath="/assets/Debris-Bark.heic" src="assets/Debris-Bark.heic"/>
+		    <emitterBehaviors>
+		      <CAEmitterBehavior behavior="wave" name="wave" frequency="4.14" force="1000 0 0"/>
+		      <CAEmitterBehavior behavior="wave" name="wave 2" enabled="0" frequency="2.1273" force="0 3000.06005859375 0"/>
+		      <CAEmitterBehavior behavior="wave" name="wave 3" enabled="0" frequency="1.03" force="0 -1999.9599609375 0"/>
+		      <CAEmitterBehavior behavior="wave" name="wave 4" enabled="0" force="0 1500.0400390625 0" frequency="2.877"/>
+		      <CAEmitterBehavior behavior="wave" name="wave 5" force="0 -8661.9404296875 0" frequency="3.027"/>
+		    </emitterBehaviors>
+		  </CAEmitterCell>
+		</emitterCells>
+		<backgroundColor opacity="0" value="1 0.1491 0"/>
+		<animations>
+		  <p key="animation-2" type="CAKeyframeAnimation" keyPath="position" autoreverses="1" beginTime="1e-100" duration="0.4752" fillMode="both" removedOnCompletion="0" repeatCount="inf" timingFunction="easeInEaseOut">
+		    <keyTimes>
+		      <integer value="0"/>
+		      <integer value="1"/>
+		    </keyTimes>
+		    <values>
+		      <CGPoint value="862 93.3443377316"/>
+		      <CGPoint value="862 143.3443377316"/>
+		    </values>
+		  </p>
+		</animations>
+	      </CAEmitterLayer>
+	    </sublayers>
+	  </CATransformLayer>
+	  <CALayer id="#12" allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 640 1136" contentsFormat="RGBA8" hidden="0" name="__Shake-Fine" position="660.951521700919 567.879161582589">
+	    <backgroundColor opacity="0" value="0 0 0"/>
+	    <sublayers>
+	      <CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 640 1136" contentsFormat="RGBA8" name="Shake-Coarse" position="320 568">
+		<backgroundColor opacity="0" value="0.5746 0.06557 0"/>
+		<sublayers>
+		  <CALayer id="#2" allowsEdgeAntialiasing="0" allowsGroupOpacity="1" anchorPoint="0 0.5" bounds="0 0 640 1136" contentsFormat="RGBA8" hidden="0" name="__temp-UI-a.tif" opacity="0" position="0 568">
+		    <contents type="CGImage" relativePath="/__assets/__temp-UI-a.tif" src="__assets/__temp-UI-a.tif"/>
+		  </CALayer>
+		</sublayers>
+		<animations>
+		  <p key="animation-1" type="CAKeyframeAnimation" calculationMode="linear" additive="0" cumulative="0" keyPath="position.y" beginTime="1e-100" duration="1.333" fillMode="both" removedOnCompletion="0" repeatCount="inf">
+		    <biasValues/>
+		    <continuityValues/>
+		    <keyTimes>
+		      <integer value="0"/>
+		      <real value="0.1"/>
+		      <real value="0.2"/>
+		      <real value="0.3"/>
+		      <real value="0.4"/>
+		      <real value="0.5"/>
+		      <real value="0.6"/>
+		      <real value="0.7"/>
+		      <real value="0.8"/>
+		      <real value="0.9"/>
+		      <integer value="1"/>
+		    </keyTimes>
+		    <tensionValues/>
+		    <timingFunctions/>
+		    <values>
+		      <integer value="568"/>
+		      <real value="565.76"/>
+		      <integer value="568"/>
+		      <real value="567.16"/>
+		      <real value="568.75"/>
+		      <integer value="568"/>
+		      <real value="568.65"/>
+		      <integer value="568"/>
+		      <real value="568.7"/>
+		      <real value="566.64"/>
+		      <integer value="568"/>
+		    </values>
+		  </p>
+		  <p key="animation-2" type="CAKeyframeAnimation" keyPath="position.x" beginTime="1e-100" duration="1.222" fillMode="both" removedOnCompletion="0" repeatCount="inf" speed="1.333" timeOffset="0">
+		    <keyTimes>
+		      <integer value="0"/>
+		      <real value="0.1"/>
+		      <real value="0.2"/>
+		      <real value="0.3"/>
+		      <real value="0.4"/>
+		      <real value="0.5"/>
+		      <real value="0.6"/>
+		      <real value="0.7"/>
+		      <real value="0.8"/>
+		      <real value="0.9"/>
+		      <integer value="1"/>
+		    </keyTimes>
+		    <timingFunctions/>
+		    <values>
+		      <integer value="320"/>
+		      <real value="318.96"/>
+		      <integer value="320"/>
+		      <real value="319.48"/>
+		      <real value="320.36"/>
+		      <integer value="320"/>
+		      <real value="320.64"/>
+		      <integer value="320"/>
+		      <real value="320.7"/>
+		      <real value="318.57"/>
+		      <integer value="320"/>
+		    </values>
+		  </p>
+		</animations>
+	      </CALayer>
+	    </sublayers>
+	    <animations>
+	      <p key="animation-1" type="CAKeyframeAnimation" calculationMode="linear" additive="0" cumulative="0" keyPath="position.y" beginTime="1e-100" duration="0.555" fillMode="both" removedOnCompletion="0" repeatCount="inf">
+		<biasValues/>
+		<continuityValues/>
+		<keyTimes>
+		  <integer value="0"/>
+		  <real value="0.1"/>
+		  <real value="0.2"/>
+		  <real value="0.3"/>
+		  <real value="0.4"/>
+		  <real value="0.5"/>
+		  <real value="0.6"/>
+		  <real value="0.7"/>
+		  <real value="0.8"/>
+		  <real value="0.9"/>
+		  <integer value="1"/>
+		</keyTimes>
+		<tensionValues/>
+		<timingFunctions/>
+		<values>
+		  <integer value="568"/>
+		  <real value="565.76"/>
+		  <integer value="568"/>
+		  <real value="567.16"/>
+		  <real value="568.75"/>
+		  <integer value="568"/>
+		  <real value="568.65"/>
+		  <integer value="568"/>
+		  <real value="568.7"/>
+		  <real value="566.64"/>
+		  <integer value="568"/>
+		</values>
+	      </p>
+	      <p key="animation-2" type="CAKeyframeAnimation" keyPath="position.x" beginTime="1e-100" duration="0.444" fillMode="both" removedOnCompletion="0" repeatCount="inf" speed="1.333" timeOffset="0">
+		<keyTimes>
+		  <integer value="0"/>
+		  <real value="0.1"/>
+		  <real value="0.2"/>
+		  <real value="0.3"/>
+		  <real value="0.4"/>
+		  <real value="0.5"/>
+		  <real value="0.6"/>
+		  <real value="0.7"/>
+		  <real value="0.8"/>
+		  <real value="0.9"/>
+		  <integer value="1"/>
+		</keyTimes>
+		<timingFunctions/>
+		<values>
+		  <integer value="320"/>
+		  <real value="318.96"/>
+		  <integer value="320"/>
+		  <real value="319.48"/>
+		  <real value="320.36"/>
+		  <integer value="320"/>
+		  <real value="320.64"/>
+		  <integer value="320"/>
+		  <real value="320.7"/>
+		  <real value="318.57"/>
+		  <integer value="320"/>
+		</values>
+	      </p>
+	    </animations>
+	  </CALayer>
+	  <CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 952.052337646484 1136" contentsFormat="RGBA8" hidden="0" name="__Xtras" position="476.026168823242 568">
+	    <sublayers>
+	      <CALayer id="#3" allowsEdgeAntialiasing="0" allowsGroupOpacity="1" anchorPoint="0 0.5" bounds="0 0 952.052337646484 1136" contentsFormat="RGBA8" name="__temp-UI-b.tif" opacity="0" position="0 568">
+		<contents type="CGImage" relativePath="/__assets/__temp-UI-b.tif" src="__assets/__temp-UI-b.tif"/>
+	      </CALayer>
+	      <CALayer id="#4" allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 956.958297729492 1136" contentsFormat="RGBA8" name="__View Shadows" opacity="1" position="478.479156494141 -568">
+		<backgroundColor opacity="0.2" value="1 1 1"/>
+	      </CALayer>
+	    </sublayers>
+	    <eventHandlers>
+	      <LKEventHandler eventType="click" action="setPlayhead" actionValue="0"/>
+	    </eventHandlers>
+	    <scriptComponents>
+	      <LKScriptComponentInstance name="Draggable">
+		<component/>
+		<values>
+		  <dragX type="integer" value="0"/>
+		</values>
+	      </LKScriptComponentInstance>
+	    </scriptComponents>
+	  </CALayer>
+	</sublayers>
+      </CALayer>
+    </sublayers>
+    <states>
+      <LKState name="Full"/>
+      <LKState name="Landscape" basedOn="Full">
+	<elements>
+	  <LKStateSetValue targetId="#1" keyPath="transform.rotation.z">
+	    <value type="real" value="1.5708"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#1" keyPath="position.y">
+	    <value type="integer" value="1389"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#1" keyPath="transform.scale.xy">
+	    <value type="real" value="4.341"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#1" keyPath="position.x">
+	    <value type="real" value="2465.6"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#2" keyPath="opacity">
+	    <value type="integer" value="0"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#3" keyPath="opacity">
+	    <value type="integer" value="0"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#4" keyPath="opacity">
+	    <value type="integer" value="0"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#5" keyPath="emitterBehaviors.valueOverLife.values.@index(0)">
+	    <value type="real" value="0.563"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#5" keyPath="emitterBehaviors.valueOverLife.values.@index(1)">
+	    <value type="real" value="0.563"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#6" keyPath="transform.scale.xy">
+	    <value type="real" value="0.563"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#6" keyPath="position.y">
+	    <value type="integer" value="1090"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#6" keyPath="position.x">
+	    <value type="integer" value="464"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#5" keyPath="position.y">
+	    <value type="integer" value="900"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#7" keyPath="emitterCells.Water.lifetime">
+	    <value type="real" value="1.2"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#8" keyPath="emitterCells.Water.lifetime">
+	    <value type="real" value="1.2"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#9" keyPath="emitterCells.Water.lifetime">
+	    <value type="real" value="1.2"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue final="false" targetId="#1" keyPath="transform.scale.xy">
+	    <value type="integer" value="3"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue final="false" targetId="#1" keyPath="position">
+	    <value type="CGPoint" value="1669.6 1389"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue final="false" targetId="#5" keyPath="position">
+	    <value type="CGPoint" value="847.804580688477 900"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue final="false" targetId="#9" keyPath="hidden">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue final="false" targetId="#8" keyPath="hidden">
+	    <value type="integer" value="0"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue final="false" targetId="#7" keyPath="hidden">
+	    <value type="integer" value="0"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue final="false" targetId="#7" keyPath="lifetime">
+	    <value type="integer" value="2"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue final="false" targetId="#8" keyPath="lifetime">
+	    <value type="integer" value="2"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue final="false" targetId="#9" keyPath="lifetime">
+	    <value type="integer" value="2"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue final="false" targetId="#5" keyPath="hidden">
+	    <value type="integer" value="0"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue final="false" targetId="#10" keyPath="hidden">
+	    <value type="integer" value="0"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue final="false" targetId="#11" keyPath="hidden">
+	    <value type="integer" value="0"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue final="false" targetId="#6" keyPath="hidden">
+	    <value type="integer" value="0"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue final="false" targetId="#12" keyPath="hidden">
+	    <value type="integer" value="0"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue final="false" targetId="#6" keyPath="position">
+	    <value type="CGPoint" value="684 729"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue final="false" targetId="#12" keyPath="position">
+	    <value type="CGPoint" value="723.951521700919 289.879161582589"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue final="false" targetId="#13" keyPath="position">
+	    <value type="CGPoint" value="475.208511352539 782.375534057617"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue final="false" targetId="#13" keyPath="bounds">
+	    <value type="CGRect" value="0 0 950.417007446289 707.248931884766"/>
+	  </LKStateSetValue>
+	</elements>
+      </LKState>
+      <LKState name="Mini">
+	<elements>
+	  <LKStateRemoveElement targetId="#1" keyPath="sublayers">
+	    <object type="CALayer" allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 320 568" contentsFormat="RGBA8" name="__WeatherUI" position="320 568" rasterizationScale="2" transform="scale(2, 2, 1)">
+	      <sublayers>
+		<CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 320 568" contentsFormat="RGBA8" geometryFlipped="1" name="UIView (0x14d8a7c0)" needsDisplayOnBoundsChange="0" needsLayoutOnGeometryChange="1" opaque="0" position="160 284">
+		  <backgroundColor opacity="0" value="0 0 0"/>
+		  <sublayers>
+		    <CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="960 0 320 568" contentsFormat="RGBA8" hidden="0" masksToBounds="1" name="UICollectionView (0x153c5800)" needsDisplayOnBoundsChange="0" opaque="0" position="160 284">
+		      <backgroundColor opacity="0" value="0 0 0"/>
+		      <sublayers>
+			<CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 320 568" contentsFormat="RGBA8" hidden="0" masksToBounds="1" name="WAWeatherCollectionViewCell (0x14d71130)" needsDisplayOnBoundsChange="0" opaque="0" position="1120 284">
+			  <backgroundColor opacity="0" value="0 0 0"/>
+			  <sublayers>
+			    <CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 320 568" contentsFormat="RGBA8" name="UIView (0x14d7bed0)" opaque="1" position="160 284"/>
+			    <CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 320 568" contentsFormat="RGBA8" name="WAWeatherCityView (0x14ecd3b0)" opaque="1" position="160 284">
+			      <sublayers>
+				<CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 320 568" contentsFormat="RGBA8" hidden="0" name="UIView (0x14ecda80)" opaque="1" position="160 284">
+				  <sublayers>
+				    <CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 54 19" contentsFormat="RGBA8" contentsGravity="left" contentsScale="2" masksToBounds="1" name="UILabel (0x14ece710)" needsDisplayOnBoundsChange="0" opaque="0" position="42 270.5" rasterizationScale="2"/>
+				    <CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 35 17" contentsFormat="RGBA8" contentsGravity="left" contentsScale="2" masksToBounds="1" name="UILabel (0x14eceb30)" needsDisplayOnBoundsChange="0" opaque="0" position="93.5 271.5" rasterizationScale="2"/>
+				    <CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 18 22" contentsFormat="RGBA8" contentsGravity="left" contentsScale="2" masksToBounds="1" name="UILabel (0x14ecbec0)" needsDisplayOnBoundsChange="0" opaque="0" position="272 270" rasterizationScale="2"/>
+				    <CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 9 22" contentsFormat="RGBA8" contentsGravity="left" contentsScale="2" masksToBounds="1" name="UILabel (0x14ec0dc0)" needsDisplayOnBoundsChange="0" opaque="0" position="300.5 270" rasterizationScale="2"/>
+				    <CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 320 80" contentsFormat="RGBA8" name="HourlyScrollerBeltView (0x14ecb490)" opaque="1" position="160 329.5">
+				      <sublayers>
+					<CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 320 80" contentsFormat="RGBA8" masksToBounds="1" name="UIScrollView (0x14db2890)" needsDisplayOnBoundsChange="0" opaque="0" position="160 40">
+					  <backgroundColor opacity="0" value="0 0 0"/>
+					  <sublayers>
+					    <CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 668 80" contentsFormat="RGBA8" name="UIView (0x14dbc0a0)" opaque="1" position="334 40">
+					      <mask allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 320 80" contentsFormat="RGBA8" contentsScale="2" contentsScaling="stretch" opaque="0" position="160 40" rasterizationScale="2" shouldRasterize="1"/>
+					      <sublayers>
+						<CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 50 81" contentsFormat="RGBA8" hidden="0" name="HourlyForecastCell (0x14ed80b0)" needsDisplayOnBoundsChange="0" opaque="0" position="34 40.5">
+						  <backgroundColor opacity="0" value="0 0 0"/>
+						  <sublayers>
+						    <CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 25 16" contentsFormat="RGBA8" contentsGravity="left" contentsScale="2" masksToBounds="1" name="UILabel (0x14ed87a0)" needsDisplayOnBoundsChange="0" opaque="0" position="24.5 14.5" rasterizationScale="2"/>
+						    <CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 9 21" contentsFormat="RGBA8" contentsGravity="left" contentsScale="2" masksToBounds="1" name="UILabel (0x14ed89e0)" needsDisplayOnBoundsChange="0" opaque="0" position="24.5 68.5" rasterizationScale="2"/>
+						    <CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 0 0" contentsFormat="RGBA8" contentsGravity="left" contentsScale="2" masksToBounds="1" name="UILabel (0x14ed8d80)" needsDisplayOnBoundsChange="0" opaque="0" position="16 21" rasterizationScale="2"/>
+						    <CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 40 36" contentsFormat="RGBA8" contentsScale="2" contentsScaling="stretch" name="UIImageView (0x14ed8fb0)" opaque="0" position="24 40.5" rasterizationScale="2"/>
+						  </sublayers>
+						</CALayer>
+						<CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 50 81" contentsFormat="RGBA8" hidden="0" name="HourlyForecastCell (0x14db8ba0)" needsDisplayOnBoundsChange="0" opaque="0" position="84 40.5">
+						  <backgroundColor opacity="0" value="0 0 0"/>
+						  <sublayers>
+						    <CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 26 16" contentsFormat="RGBA8" contentsGravity="left" contentsScale="2" masksToBounds="1" name="UILabel (0x14daa5d0)" needsDisplayOnBoundsChange="0" opaque="0" position="25 14.5" rasterizationScale="2"/>
+						    <CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 18 21" contentsFormat="RGBA8" contentsGravity="left" contentsScale="2" masksToBounds="1" name="UILabel (0x14daa750)" needsDisplayOnBoundsChange="0" opaque="0" position="25 68.5" rasterizationScale="2"/>
+						    <CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 0 0" contentsFormat="RGBA8" contentsGravity="left" contentsScale="2" masksToBounds="1" name="UILabel (0x14daa970)" needsDisplayOnBoundsChange="0" opaque="0" position="16 21" rasterizationScale="2"/>
+						    <CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 40 36" contentsFormat="RGBA8" contentsScale="2" contentsScaling="stretch" name="UIImageView (0x14daaba0)" opaque="0" position="24 40.5" rasterizationScale="2"/>
+						  </sublayers>
+						</CALayer>
+						<CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 50 81" contentsFormat="RGBA8" hidden="0" name="HourlyForecastCell (0x14db9410)" needsDisplayOnBoundsChange="0" opaque="0" position="134 40.5">
+						  <backgroundColor opacity="0" value="0 0 0"/>
+						  <sublayers>
+						    <CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 26 16" contentsFormat="RGBA8" contentsGravity="left" contentsScale="2" masksToBounds="1" name="UILabel (0x14db94c0)" needsDisplayOnBoundsChange="0" opaque="0" position="25 14.5" rasterizationScale="2"/>
+						    <CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 18 21" contentsFormat="RGBA8" contentsGravity="left" contentsScale="2" masksToBounds="1" name="UILabel (0x14daca40)" needsDisplayOnBoundsChange="0" opaque="0" position="25 68.5" rasterizationScale="2"/>
+						    <CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 0 0" contentsFormat="RGBA8" contentsGravity="left" contentsScale="2" masksToBounds="1" name="UILabel (0x14dbc780)" needsDisplayOnBoundsChange="0" opaque="0" position="16 21" rasterizationScale="2"/>
+						    <CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 40 36" contentsFormat="RGBA8" contentsScale="2" contentsScaling="stretch" name="UIImageView (0x14dbc990)" opaque="0" position="24 40.5" rasterizationScale="2"/>
+						  </sublayers>
+						</CALayer>
+						<CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 50 81" contentsFormat="RGBA8" hidden="0" name="HourlyForecastCell (0x14dbcbc0)" needsDisplayOnBoundsChange="0" opaque="0" position="184 40.5">
+						  <backgroundColor opacity="0" value="0 0 0"/>
+						  <sublayers>
+						    <CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 26 16" contentsFormat="RGBA8" contentsGravity="left" contentsScale="2" masksToBounds="1" name="UILabel (0x14dbcd70)" needsDisplayOnBoundsChange="0" opaque="0" position="25 14.5" rasterizationScale="2"/>
+						    <CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 18 21" contentsFormat="RGBA8" contentsGravity="left" contentsScale="2" masksToBounds="1" name="UILabel (0x14dbcff0)" needsDisplayOnBoundsChange="0" opaque="0" position="25 68.5" rasterizationScale="2"/>
+						    <CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 0 0" contentsFormat="RGBA8" contentsGravity="left" contentsScale="2" masksToBounds="1" name="UILabel (0x14dbd220)" needsDisplayOnBoundsChange="0" opaque="0" position="16 21" rasterizationScale="2"/>
+						    <CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 40 36" contentsFormat="RGBA8" contentsScale="2" contentsScaling="stretch" name="UIImageView (0x14dbd450)" opaque="0" position="24 40.5" rasterizationScale="2"/>
+						  </sublayers>
+						</CALayer>
+						<CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 50 81" contentsFormat="RGBA8" hidden="0" name="HourlyForecastCell (0x14dbd690)" needsDisplayOnBoundsChange="0" opaque="0" position="234 40.5">
+						  <backgroundColor opacity="0" value="0 0 0"/>
+						  <sublayers>
+						    <CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 26 16" contentsFormat="RGBA8" contentsGravity="left" contentsScale="2" masksToBounds="1" name="UILabel (0x14dbd840)" needsDisplayOnBoundsChange="0" opaque="0" position="25 14.5" rasterizationScale="2"/>
+						    <CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 18 21" contentsFormat="RGBA8" contentsGravity="left" contentsScale="2" masksToBounds="1" name="UILabel (0x14dbdac0)" needsDisplayOnBoundsChange="0" opaque="0" position="25 68.5" rasterizationScale="2"/>
+						    <CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 0 0" contentsFormat="RGBA8" contentsGravity="left" contentsScale="2" masksToBounds="1" name="UILabel (0x14dbdcf0)" needsDisplayOnBoundsChange="0" opaque="0" position="16 21" rasterizationScale="2"/>
+						    <CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 40 36" contentsFormat="RGBA8" contentsScale="2" contentsScaling="stretch" name="UIImageView (0x14dbdf20)" opaque="0" position="24 40.5" rasterizationScale="2"/>
+						  </sublayers>
+						</CALayer>
+						<CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 50 81" contentsFormat="RGBA8" hidden="0" name="HourlyForecastCell (0x14dbe160)" needsDisplayOnBoundsChange="0" opaque="0" position="284 40.5">
+						  <backgroundColor opacity="0" value="0 0 0"/>
+						  <sublayers>
+						    <CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 26 16" contentsFormat="RGBA8" contentsGravity="left" contentsScale="2" masksToBounds="1" name="UILabel (0x14eda140)" needsDisplayOnBoundsChange="0" opaque="0" position="25 14.5" rasterizationScale="2"/>
+						    <CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 18 21" contentsFormat="RGBA8" contentsGravity="left" contentsScale="2" masksToBounds="1" name="UILabel (0x14eda630)" needsDisplayOnBoundsChange="0" opaque="0" position="25 68.5" rasterizationScale="2"/>
+						    <CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 0 0" contentsFormat="RGBA8" contentsGravity="left" contentsScale="2" masksToBounds="1" name="UILabel (0x14eda840)" needsDisplayOnBoundsChange="0" opaque="0" position="16 21" rasterizationScale="2"/>
+						    <CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 40 36" contentsFormat="RGBA8" contentsScale="2" contentsScaling="stretch" name="UIImageView (0x14edaa70)" opaque="0" position="24 40.5" rasterizationScale="2"/>
+						  </sublayers>
+						</CALayer>
+						<CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 50 81" contentsFormat="RGBA8" hidden="0" name="HourlyForecastCell (0x14edacb0)" needsDisplayOnBoundsChange="0" opaque="0" position="334 40.5">
+						  <backgroundColor opacity="0" value="0 0 0"/>
+						  <sublayers>
+						    <CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 26 16" contentsFormat="RGBA8" contentsGravity="left" contentsScale="2" masksToBounds="1" name="UILabel (0x14edae60)" needsDisplayOnBoundsChange="0" opaque="0" position="25 14.5" rasterizationScale="2"/>
+						    <CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 9 21" contentsFormat="RGBA8" contentsGravity="left" contentsScale="2" masksToBounds="1" name="UILabel (0x14edb0e0)" needsDisplayOnBoundsChange="0" opaque="0" position="24.5 68.5" rasterizationScale="2"/>
+						    <CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 0 0" contentsFormat="RGBA8" contentsGravity="left" contentsScale="2" masksToBounds="1" name="UILabel (0x14edb420)" needsDisplayOnBoundsChange="0" opaque="0" position="16 21" rasterizationScale="2"/>
+						    <CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 40 36" contentsFormat="RGBA8" contentsScale="2" contentsScaling="stretch" name="UIImageView (0x14edb610)" opaque="0" position="24 40.5" rasterizationScale="2"/>
+						  </sublayers>
+						</CALayer>
+						<CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 50 81" contentsFormat="RGBA8" hidden="0" name="HourlyForecastCell (0x14edb850)" needsDisplayOnBoundsChange="0" opaque="0" position="384 40.5">
+						  <backgroundColor opacity="0" value="0 0 0"/>
+						  <sublayers>
+						    <CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 26 16" contentsFormat="RGBA8" contentsGravity="left" contentsScale="2" masksToBounds="1" name="UILabel (0x14edba00)" needsDisplayOnBoundsChange="0" opaque="0" position="25 14.5" rasterizationScale="2"/>
+						    <CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 9 21" contentsFormat="RGBA8" contentsGravity="left" contentsScale="2" masksToBounds="1" name="UILabel (0x14edbc80)" needsDisplayOnBoundsChange="0" opaque="0" position="24.5 68.5" rasterizationScale="2"/>
+						    <CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 0 0" contentsFormat="RGBA8" contentsGravity="left" contentsScale="2" masksToBounds="1" name="UILabel (0x14edbeb0)" needsDisplayOnBoundsChange="0" opaque="0" position="16 21" rasterizationScale="2"/>
+						    <CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 40 36" contentsFormat="RGBA8" contentsScale="2" contentsScaling="stretch" name="UIImageView (0x14edc0e0)" opaque="0" position="24 40.5" rasterizationScale="2"/>
+						  </sublayers>
+						</CALayer>
+						<CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 50 81" contentsFormat="RGBA8" hidden="0" name="HourlyForecastCell (0x14edc320)" needsDisplayOnBoundsChange="0" opaque="0" position="434 40.5">
+						  <backgroundColor opacity="0" value="0 0 0"/>
+						  <sublayers>
+						    <CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 40 16" contentsFormat="RGBA8" contentsGravity="left" contentsScale="2" masksToBounds="1" name="UILabel (0x14edc4d0)" needsDisplayOnBoundsChange="0" opaque="0" position="25 14.5" rasterizationScale="2"/>
+						    <CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 48 21" contentsFormat="RGBA8" contentsGravity="left" contentsScale="2" masksToBounds="1" name="UILabel (0x14edc750)" needsDisplayOnBoundsChange="0" opaque="0" position="25 68.5" rasterizationScale="2"/>
+						    <CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 0 0" contentsFormat="RGBA8" contentsGravity="left" contentsScale="2" masksToBounds="1" name="UILabel (0x14edc980)" needsDisplayOnBoundsChange="0" opaque="0" position="16 21" rasterizationScale="2"/>
+						    <CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 0 0" contentsFormat="RGBA8" contentsScaling="stretch" name="UIImageView (0x14edcbb0)" opaque="1" position="4 22.5"/>
+						  </sublayers>
+						</CALayer>
+						<CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 50 81" contentsFormat="RGBA8" hidden="0" name="HourlyForecastCell (0x14edcdf0)" needsDisplayOnBoundsChange="0" opaque="0" position="484 40.5">
+						  <backgroundColor opacity="0" value="0 0 0"/>
+						  <sublayers>
+						    <CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 26 16" contentsFormat="RGBA8" contentsGravity="left" contentsScale="2" masksToBounds="1" name="UILabel (0x14edcfa0)" needsDisplayOnBoundsChange="0" opaque="0" position="25 14.5" rasterizationScale="2"/>
+						    <CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 9 21" contentsFormat="RGBA8" contentsGravity="left" contentsScale="2" masksToBounds="1" name="UILabel (0x14edd220)" needsDisplayOnBoundsChange="0" opaque="0" position="24.5 68.5" rasterizationScale="2"/>
+						    <CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 0 0" contentsFormat="RGBA8" contentsGravity="left" contentsScale="2" masksToBounds="1" name="UILabel (0x14edd450)" needsDisplayOnBoundsChange="0" opaque="0" position="16 21" rasterizationScale="2"/>
+						    <CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 40 36" contentsFormat="RGBA8" contentsScale="2" contentsScaling="stretch" name="UIImageView (0x14edd680)" opaque="0" position="24 40.5" rasterizationScale="2"/>
+						  </sublayers>
+						</CALayer>
+						<CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 50 81" contentsFormat="RGBA8" hidden="0" name="HourlyForecastCell (0x14edd8c0)" needsDisplayOnBoundsChange="0" opaque="0" position="534 40.5">
+						  <backgroundColor opacity="0" value="0 0 0"/>
+						  <sublayers>
+						    <CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 32 16" contentsFormat="RGBA8" contentsGravity="left" contentsScale="2" masksToBounds="1" name="UILabel (0x14edda70)" needsDisplayOnBoundsChange="0" opaque="0" position="25 14.5" rasterizationScale="2"/>
+						    <CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 9 21" contentsFormat="RGBA8" contentsGravity="left" contentsScale="2" masksToBounds="1" name="UILabel (0x14eddcf0)" needsDisplayOnBoundsChange="0" opaque="0" position="24.5 68.5" rasterizationScale="2"/>
+						    <CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 0 0" contentsFormat="RGBA8" contentsGravity="left" contentsScale="2" masksToBounds="1" name="UILabel (0x14eddf20)" needsDisplayOnBoundsChange="0" opaque="0" position="16 21" rasterizationScale="2"/>
+						    <CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 40 36" contentsFormat="RGBA8" contentsScale="2" contentsScaling="stretch" name="UIImageView (0x14ede150)" opaque="0" position="24 40.5" rasterizationScale="2"/>
+						  </sublayers>
+						</CALayer>
+						<CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 50 81" contentsFormat="RGBA8" hidden="0" name="HourlyForecastCell (0x14ede390)" needsDisplayOnBoundsChange="0" opaque="0" position="584 40.5">
+						  <backgroundColor opacity="0" value="0 0 0"/>
+						  <sublayers>
+						    <CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 32 16" contentsFormat="RGBA8" contentsGravity="left" contentsScale="2" masksToBounds="1" name="UILabel (0x14ede540)" needsDisplayOnBoundsChange="0" opaque="0" position="25 14.5" rasterizationScale="2"/>
+						    <CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 9 21" contentsFormat="RGBA8" contentsGravity="left" contentsScale="2" masksToBounds="1" name="UILabel (0x14ede7c0)" needsDisplayOnBoundsChange="0" opaque="0" position="24.5 68.5" rasterizationScale="2"/>
+						    <CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 0 0" contentsFormat="RGBA8" contentsGravity="left" contentsScale="2" masksToBounds="1" name="UILabel (0x14ede9f0)" needsDisplayOnBoundsChange="0" opaque="0" position="16 21" rasterizationScale="2"/>
+						    <CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 40 36" contentsFormat="RGBA8" contentsScale="2" contentsScaling="stretch" name="UIImageView (0x14edec20)" opaque="0" position="24 40.5" rasterizationScale="2"/>
+						  </sublayers>
+						</CALayer>
+						<CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 50 81" contentsFormat="RGBA8" hidden="0" name="HourlyForecastCell (0x14ee1080)" needsDisplayOnBoundsChange="0" opaque="0" position="634 40.5">
+						  <backgroundColor opacity="0" value="0 0 0"/>
+						  <sublayers>
+						    <CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 32 16" contentsFormat="RGBA8" contentsGravity="left" contentsScale="2" masksToBounds="1" name="UILabel (0x14edeee0)" needsDisplayOnBoundsChange="0" opaque="0" position="25 14.5" rasterizationScale="2"/>
+						    <CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 9 21" contentsFormat="RGBA8" contentsGravity="left" contentsScale="2" masksToBounds="1" name="UILabel (0x14ee09b0)" needsDisplayOnBoundsChange="0" opaque="0" position="24.5 68.5" rasterizationScale="2"/>
+						    <CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 0 0" contentsFormat="RGBA8" contentsGravity="left" contentsScale="2" masksToBounds="1" name="UILabel (0x14ee0bd0)" needsDisplayOnBoundsChange="0" opaque="0" position="16 21" rasterizationScale="2"/>
+						    <CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 40 36" contentsFormat="RGBA8" contentsScale="2" contentsScaling="stretch" name="UIImageView (0x14ee0e00)" opaque="0" position="24 40.5" rasterizationScale="2"/>
+						  </sublayers>
+						</CALayer>
+					      </sublayers>
+					    </CALayer>
+					  </sublayers>
+					</CALayer>
+				      </sublayers>
+				    </CALayer>
+				    <CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 320 29" contentsFormat="RGBA8" name="WADayForecastView (0x14ec7290)" opaque="1" position="160 386.5">
+				      <sublayers>
+					<CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 40 36" contentsFormat="RGBA8" contentsScale="2" contentsScaling="stretch" name="UIImageView (0x14ec74a0)" opaque="0" position="160 19" rasterizationScale="2"/>
+					<CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 50 19" contentsFormat="RGBA8" contentsGravity="left" contentsScale="2" masksToBounds="1" name="UILabel (0x14eb7470)" needsDisplayOnBoundsChange="0" opaque="0" position="40 20" rasterizationScale="2"/>
+					<CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 19 23" contentsFormat="RGBA8" contentsGravity="left" contentsScale="2" masksToBounds="1" name="UILabel (0x14ec14f0)" needsDisplayOnBoundsChange="0" opaque="0" position="261.5 17" rasterizationScale="2"/>
+					<CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 10 23" contentsFormat="RGBA8" contentsGravity="left" contentsScale="2" masksToBounds="1" name="UILabel (0x14ec1690)" needsDisplayOnBoundsChange="0" opaque="0" position="300 17" rasterizationScale="2"/>
+				      </sublayers>
+				    </CALayer>
+				    <CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 320 29" contentsFormat="RGBA8" name="WADayForecastView (0x14eb8a50)" opaque="1" position="160 415.5">
+				      <sublayers>
+					<CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 40 36" contentsFormat="RGBA8" contentsScale="2" contentsScaling="stretch" name="UIImageView (0x14eb8b00)" opaque="0" position="160 19" rasterizationScale="2"/>
+					<CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 72 19" contentsFormat="RGBA8" contentsGravity="left" contentsScale="2" masksToBounds="1" name="UILabel (0x14eb8bc0)" needsDisplayOnBoundsChange="0" opaque="0" position="51 20" rasterizationScale="2"/>
+					<CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 19 23" contentsFormat="RGBA8" contentsGravity="left" contentsScale="2" masksToBounds="1" name="UILabel (0x14ec5c20)" needsDisplayOnBoundsChange="0" opaque="0" position="261.5 17" rasterizationScale="2"/>
+					<CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 10 23" contentsFormat="RGBA8" contentsGravity="left" contentsScale="2" masksToBounds="1" name="UILabel (0x14ec5e30)" needsDisplayOnBoundsChange="0" opaque="0" position="300 17" rasterizationScale="2"/>
+				      </sublayers>
+				    </CALayer>
+				    <CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 320 29" contentsFormat="RGBA8" name="WADayForecastView (0x14ec6070)" opaque="1" position="160 444.5">
+				      <sublayers>
+					<CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 40 36" contentsFormat="RGBA8" contentsScale="2" contentsScaling="stretch" name="UIImageView (0x14ec5010)" opaque="0" position="160 19" rasterizationScale="2"/>
+					<CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 56 19" contentsFormat="RGBA8" contentsGravity="left" contentsScale="2" masksToBounds="1" name="UILabel (0x14ec50d0)" needsDisplayOnBoundsChange="0" opaque="0" position="43 20" rasterizationScale="2"/>
+					<CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 19 23" contentsFormat="RGBA8" contentsGravity="left" contentsScale="2" masksToBounds="1" name="UILabel (0x14ec52e0)" needsDisplayOnBoundsChange="0" opaque="0" position="261.5 17" rasterizationScale="2"/>
+					<CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 10 23" contentsFormat="RGBA8" contentsGravity="left" contentsScale="2" masksToBounds="1" name="UILabel (0x14ec54f0)" needsDisplayOnBoundsChange="0" opaque="0" position="300 17" rasterizationScale="2"/>
+				      </sublayers>
+				    </CALayer>
+				    <CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 320 29" contentsFormat="RGBA8" name="WADayForecastView (0x14ec5730)" opaque="1" position="160 473.5">
+				      <sublayers>
+					<CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 40 36" contentsFormat="RGBA8" contentsScale="2" contentsScaling="stretch" name="UIImageView (0x14ec57e0)" opaque="0" position="160 19" rasterizationScale="2"/>
+					<CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 37 19" contentsFormat="RGBA8" contentsGravity="left" contentsScale="2" masksToBounds="1" name="UILabel (0x14ec58a0)" needsDisplayOnBoundsChange="0" opaque="0" position="33.5 20" rasterizationScale="2"/>
+					<CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 19 23" contentsFormat="RGBA8" contentsGravity="left" contentsScale="2" masksToBounds="1" name="UILabel (0x14ec9fc0)" needsDisplayOnBoundsChange="0" opaque="0" position="261.5 17" rasterizationScale="2"/>
+					<CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 19 23" contentsFormat="RGBA8" contentsGravity="left" contentsScale="2" masksToBounds="1" name="UILabel (0x14ec2060)" needsDisplayOnBoundsChange="0" opaque="0" position="295.5 17" rasterizationScale="2"/>
+				      </sublayers>
+				    </CALayer>
+				    <CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 320 29" contentsFormat="RGBA8" name="WADayForecastView (0x14ec2290)" opaque="1" position="160 502.5">
+				      <sublayers>
+					<CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 40 36" contentsFormat="RGBA8" contentsScale="2" contentsScaling="stretch" name="UIImageView (0x14ec2340)" opaque="0" position="160 19" rasterizationScale="2"/>
+					<CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 54 19" contentsFormat="RGBA8" contentsGravity="left" contentsScale="2" masksToBounds="1" name="UILabel (0x14ec2400)" needsDisplayOnBoundsChange="0" opaque="0" position="42 20" rasterizationScale="2"/>
+					<CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 19 23" contentsFormat="RGBA8" contentsGravity="left" contentsScale="2" masksToBounds="1" name="UILabel (0x14ecc500)" needsDisplayOnBoundsChange="0" opaque="0" position="261.5 17" rasterizationScale="2"/>
+					<CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 19 23" contentsFormat="RGBA8" contentsGravity="left" contentsScale="2" masksToBounds="1" name="UILabel (0x14ecf090)" needsDisplayOnBoundsChange="0" opaque="0" position="295.5 17" rasterizationScale="2"/>
+				      </sublayers>
+				    </CALayer>
+				    <CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 320 0.5" contentsFormat="RGBA8" contentsScale="2" contentsScaling="stretch" name="UIImageView (0x14db3000)" opacity="0.5" opaque="0" position="160 288.25" rasterizationScale="2"/>
+				    <CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 320 0.5" contentsFormat="RGBA8" contentsScale="2" contentsScaling="stretch" name="UIImageView (0x14db2ef0)" opacity="0.5" opaque="0" position="160 371.75" rasterizationScale="2"/>
+				    <CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 320 0.5" contentsFormat="RGBA8" contentsScale="2" contentsScaling="stretch" name="UIImageView (0x14db89b0)" opacity="0.5" opaque="0" position="160 524.25" rasterizationScale="2"/>
+				  </sublayers>
+				</CALayer>
+			      </sublayers>
+			    </CALayer>
+			  </sublayers>
+			</CALayer>
+			<CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 7 568" contentsCenter="0 0.4985714256763 1 0.002857142826542" contentsFormat="RGBA8" contentsScale="2" contentsScaling="stretch" name="UIImageView (0x14dba4e0)" opacity="0" opaque="0" position="1276.5 284" rasterizationScale="2"/>
+		      </sublayers>
+		    </CALayer>
+		    <CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 244 36" contentsFormat="RGBA8" hidden="0" name="TabScrollIndicatorView (0x14e926f0)" opaque="1" position="166 545">
+		      <sublayers>
+			<CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" borderWidth="1.5" bounds="0 0 3 3" contentsFormat="RGBA8" cornerRadius="1.5" name="UIView (0x14d9af70)" needsDisplayOnBoundsChange="0" opaque="0" position="107.5 18">
+			  <backgroundColor opacity="0" value="0 0 0"/>
+			  <borderColor opacity="0.51" value="1 1 1"/>
+			</CALayer>
+			<CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" borderWidth="1.5" bounds="0 0 3 3" contentsFormat="RGBA8" cornerRadius="1.5" name="UIView (0x14da5e90)" needsDisplayOnBoundsChange="0" opaque="0" position="117 18">
+			  <backgroundColor opacity="0" value="0 0 0"/>
+			  <borderColor opacity="0.51" value="1 1 1"/>
+			</CALayer>
+			<CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" borderWidth="1.5" bounds="0 0 3 3" contentsFormat="RGBA8" cornerRadius="1.5" name="UIView (0x14d8e210)" needsDisplayOnBoundsChange="0" opaque="0" position="126.5 18">
+			  <backgroundColor opacity="0" value="0 0 0"/>
+			  <borderColor opacity="0.51" value="1 1 1"/>
+			</CALayer>
+			<CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" borderColor="0.1451 0.4392 0.8431" borderWidth="1" bounds="0 0 5 5" contentsFormat="RGBA8" cornerRadius="2.5" name="UIView (0x14d9ae20)" needsDisplayOnBoundsChange="0" opaque="0" position="136 18">
+			  <backgroundColor opacity="0" value="0 0 0"/>
+			</CALayer>
+		      </sublayers>
+		    </CALayer>
+		    <CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 29 17" contentsFormat="RGBA8" name="WATouchButton (0x14ea02b0)" opaque="0" position="29.5 544.5">
+		      <sublayers>
+			<CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 29 17" contentsFormat="RGBA8" contentsScale="2" contentsScaling="stretch" hidden="0" masksToBounds="1" name="UIImageView (0x14ea0a20)" opaque="0" position="14.5 8.5" rasterizationScale="2"/>
+			<CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 100 100" contentsFormat="RGBA8" contentsScale="2" contentsScaling="stretch" hidden="0" name="UIImageView (0x14ea15f0)" opacity="0" opaque="0" position="14.5 8.5" rasterizationScale="2"/>
+		      </sublayers>
+		    </CALayer>
+		    <CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 18 18" contentsFormat="RGBA8" name="WATouchButton (0x14e9cab0)" opaque="0" position="297 545">
+		      <sublayers>
+			<CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 18 18" contentsFormat="RGBA8" contentsScale="2" contentsScaling="stretch" hidden="0" masksToBounds="1" name="UIImageView (0x14e9e9e0)" opaque="0" position="9 9" rasterizationScale="2"/>
+			<CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 100 100" contentsFormat="RGBA8" contentsScale="2" contentsScaling="stretch" hidden="0" name="UIImageView (0x14e9efa0)" opacity="0" opaque="0" position="9 9" rasterizationScale="2"/>
+		      </sublayers>
+		    </CALayer>
+		    <CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 290 50" contentsFormat="RGBA8" contentsGravity="left" contentsScale="2" hidden="1" masksToBounds="1" name="UILabel (0x14d8f0e0)" needsDisplayOnBoundsChange="0" opaque="0" position="160 40" rasterizationScale="2"/>
+		  </sublayers>
+		</CALayer>
+	      </sublayers>
+	    </object>
+	  </LKStateRemoveElement>
+	  <LKStateRemoveElement targetId="#1" keyPath="sublayers">
+	    <object type="CALayer" allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 640 1136" contentsFormat="RGBA8" hidden="0" name="__Click To Restart" position="320 568">
+	      <eventHandlers>
+		<LKEventHandler eventType="click" action="setPlayhead" actionValue="0"/>
+	      </eventHandlers>
+	    </object>
+	  </LKStateRemoveElement>
+	  <LKStateRemoveElement targetId="#1" keyPath="sublayers" objectId="#12"/>
+	  <LKStateRemoveElement targetId="#1" keyPath="sublayers">
+	    <object type="CALayer" allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 640 40" contentsFormat="RGBA8" hidden="0" name="__status-bar.heic" position="320 1116">
+	      <backgroundColor opacity="0" value="0 0 0"/>
+	    </object>
+	  </LKStateRemoveElement>
+	  <LKStateRemoveElement targetId="#1" keyPath="sublayers" objectId="#8"/>
+	  <LKStateRemoveElement targetId="#1" keyPath="sublayers" objectId="#9"/>
+	  <LKStateRemoveElement targetId="#1" keyPath="sublayers" objectId="#7"/>
+	  <LKStateRemoveElement targetId="#1" keyPath="sublayers" objectId="#5"/>
+	</elements>
+      </LKState>
+    </states>
+    <stateTransitions>
+      <LKStateTransition fromState="*" toState="Landscape">
+	<elements>
+	  <LKStateTransitionElement key="position.x" targetId="#1">
+	    <animation type="CASpringAnimation" damping="400" mass="2" stiffness="300" keyPath="position.x" beginTime="1e-100" beginTimeMode="absolute" duration="0.91" fillMode="backwards" removedOnCompletion="1" timingFunction="0.22368 0.002045 0.55342 0.95297"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="position.y" targetId="#1">
+	    <animation type="CASpringAnimation" damping="400" mass="2" stiffness="300" keyPath="position.y" beginTime="1e-100" beginTimeMode="absolute" duration="0.91" fillMode="backwards" removedOnCompletion="1" timingFunction="0.22368 0.002045 0.55342 0.95297"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="transform.scale.xy" targetId="#1">
+	    <animation type="CASpringAnimation" damping="400" mass="2" stiffness="300" keyPath="transform.scale.xy" beginTime="1e-100" beginTimeMode="absolute" duration="0.91" fillMode="backwards" removedOnCompletion="1" timingFunction="0.22368 0.002045 0.55342 0.95297"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="transform.rotation.z" targetId="#1">
+	    <animation type="CASpringAnimation" damping="400" mass="2" stiffness="300" keyPath="transform.rotation.z" beginTime="1e-100" beginTimeMode="absolute" duration="0.91" fillMode="backwards" removedOnCompletion="1" timingFunction="0.22368 0.002045 0.55342 0.95297"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="opacity" targetId="#2">
+	    <animation type="CASpringAnimation" damping="400" mass="2" stiffness="300" keyPath="opacity" beginTime="1e-100" beginTimeMode="absolute" duration="0.91" fillMode="backwards" removedOnCompletion="1" timingFunction="0.22368 0.002045 0.55342 0.95297"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="opacity" targetId="#3">
+	    <animation type="CASpringAnimation" damping="400" mass="2" stiffness="300" keyPath="opacity" beginTime="1e-100" beginTimeMode="absolute" duration="0.91" fillMode="backwards" removedOnCompletion="1" timingFunction="0.22368 0.002045 0.55342 0.95297"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="opacity" targetId="#4">
+	    <animation type="CASpringAnimation" damping="400" mass="2" stiffness="300" keyPath="opacity" beginTime="1e-100" beginTimeMode="absolute" duration="0.91" fillMode="backwards" removedOnCompletion="1" timingFunction="0.22368 0.002045 0.55342 0.95297"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="emitterBehaviors.valueOverLife.values.@index(0)" targetId="#5">
+	    <animation type="CABasicAnimation" keyPath="emitterBehaviors.valueOverLife.values.@index(0)" duration="0.25" fillMode="backwards" timingFunction="easeInEaseOut"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="emitterBehaviors.valueOverLife.values.@index(1)" targetId="#5">
+	    <animation type="CABasicAnimation" keyPath="emitterBehaviors.valueOverLife.values.@index(1)" duration="0.25" fillMode="backwards" timingFunction="easeInEaseOut"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="position.y" targetId="#6">
+	    <animation type="CABasicAnimation" keyPath="position.y" duration="0.25" fillMode="backwards" timingFunction="easeInEaseOut"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="transform.scale.xy" targetId="#6">
+	    <animation type="CABasicAnimation" keyPath="transform.scale.xy" duration="0.25" fillMode="backwards" timingFunction="easeInEaseOut"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="position.x" targetId="#6">
+	    <animation type="CABasicAnimation" keyPath="position.x" duration="0.25" fillMode="backwards" timingFunction="easeInEaseOut"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="position.y" targetId="#5">
+	    <animation type="CABasicAnimation" keyPath="position.y" duration="0.25" fillMode="backwards" timingFunction="easeInEaseOut"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="emitterCells.Water.lifetime" targetId="#7">
+	    <animation type="CABasicAnimation" keyPath="emitterCells.Water.lifetime" duration="0.25" fillMode="backwards" timingFunction="easeInEaseOut"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="emitterCells.Water.lifetime" targetId="#8">
+	    <animation type="CABasicAnimation" keyPath="emitterCells.Water.lifetime" duration="0.25" fillMode="backwards" timingFunction="easeInEaseOut"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="emitterCells.Water.lifetime" targetId="#9">
+	    <animation type="CABasicAnimation" keyPath="emitterCells.Water.lifetime" duration="0.25" fillMode="backwards" timingFunction="easeInEaseOut"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement final="false" key="position" targetId="#1">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" keyPath="position" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement final="false" key="hidden" targetId="#5">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" keyPath="hidden" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement final="false" key="hidden" targetId="#10">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" keyPath="hidden" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement final="false" key="hidden" targetId="#11">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" keyPath="hidden" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement final="false" key="position" targetId="#6">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" keyPath="position" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement final="false" key="hidden" targetId="#12">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" keyPath="hidden" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement final="false" key="position" targetId="#5">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" keyPath="position" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement final="false" key="hidden" targetId="#6">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" keyPath="hidden" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement final="false" key="hidden" targetId="#8">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" keyPath="hidden" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement final="false" key="hidden" targetId="#7">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" keyPath="hidden" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement final="false" key="hidden" targetId="#9">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" keyPath="hidden" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement final="false" key="lifetime" targetId="#7">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" keyPath="lifetime" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement final="false" key="lifetime" targetId="#8">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" keyPath="lifetime" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement final="false" key="lifetime" targetId="#9">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" keyPath="lifetime" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement final="false" key="position" targetId="#12">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" keyPath="position" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement final="false" key="position" targetId="#13">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" keyPath="position" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement final="false" key="bounds" targetId="#13">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" keyPath="bounds" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	</elements>
+      </LKStateTransition>
+      <LKStateTransition fromState="Landscape" toState="*">
+	<elements>
+	  <LKStateTransitionElement key="position.x" targetId="#1">
+	    <animation type="CASpringAnimation" damping="400" mass="2" stiffness="300" keyPath="position.x" beginTime="1e-100" beginTimeMode="absolute" duration="0.91" fillMode="backwards" removedOnCompletion="1" timingFunction="0.22368 0.002045 0.55342 0.95297"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="position.y" targetId="#1">
+	    <animation type="CASpringAnimation" damping="400" mass="2" stiffness="300" keyPath="position.y" beginTime="1e-100" beginTimeMode="absolute" duration="0.91" fillMode="backwards" removedOnCompletion="1" timingFunction="0.22368 0.002045 0.55342 0.95297"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="transform.scale.xy" targetId="#1">
+	    <animation type="CASpringAnimation" damping="400" mass="2" stiffness="300" keyPath="transform.scale.xy" beginTime="1e-100" beginTimeMode="absolute" duration="0.91" fillMode="backwards" removedOnCompletion="1" timingFunction="0.22368 0.002045 0.55342 0.95297"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="transform.rotation.z" targetId="#1">
+	    <animation type="CASpringAnimation" damping="400" mass="2" stiffness="300" keyPath="transform.rotation.z" beginTime="1e-100" beginTimeMode="absolute" duration="0.91" fillMode="backwards" removedOnCompletion="1" timingFunction="0.22368 0.002045 0.55342 0.95297"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="opacity" targetId="#2">
+	    <animation type="CASpringAnimation" damping="400" mass="2" stiffness="300" keyPath="opacity" beginTime="1e-100" beginTimeMode="absolute" duration="0.91" fillMode="backwards" removedOnCompletion="1" timingFunction="0.22368 0.002045 0.55342 0.95297"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="opacity" targetId="#3">
+	    <animation type="CASpringAnimation" damping="400" mass="2" stiffness="300" keyPath="opacity" beginTime="1e-100" beginTimeMode="absolute" duration="0.91" fillMode="backwards" removedOnCompletion="1" timingFunction="0.22368 0.002045 0.55342 0.95297"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="opacity" targetId="#4">
+	    <animation type="CASpringAnimation" damping="400" mass="2" stiffness="300" keyPath="opacity" beginTime="1e-100" beginTimeMode="absolute" duration="0.91" fillMode="backwards" removedOnCompletion="1" timingFunction="0.22368 0.002045 0.55342 0.95297"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="emitterBehaviors.valueOverLife.values.@index(0)" targetId="#5">
+	    <animation type="CABasicAnimation" keyPath="emitterBehaviors.valueOverLife.values.@index(0)" duration="0.25" fillMode="backwards" timingFunction="easeInEaseOut"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="emitterBehaviors.valueOverLife.values.@index(1)" targetId="#5">
+	    <animation type="CABasicAnimation" keyPath="emitterBehaviors.valueOverLife.values.@index(1)" duration="0.25" fillMode="backwards" timingFunction="easeInEaseOut"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="position.y" targetId="#6">
+	    <animation type="CABasicAnimation" keyPath="position.y" duration="0.25" fillMode="backwards" timingFunction="easeInEaseOut"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="transform.scale.xy" targetId="#6">
+	    <animation type="CABasicAnimation" keyPath="transform.scale.xy" duration="0.25" fillMode="backwards" timingFunction="easeInEaseOut"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="position.x" targetId="#6">
+	    <animation type="CABasicAnimation" keyPath="position.x" duration="0.25" fillMode="backwards" timingFunction="easeInEaseOut"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="position.y" targetId="#5">
+	    <animation type="CABasicAnimation" keyPath="position.y" duration="0.25" fillMode="backwards" timingFunction="easeInEaseOut"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="emitterCells.Water.lifetime" targetId="#7">
+	    <animation type="CABasicAnimation" keyPath="emitterCells.Water.lifetime" duration="0.25" fillMode="backwards" timingFunction="easeInEaseOut"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="emitterCells.Water.lifetime" targetId="#8">
+	    <animation type="CABasicAnimation" keyPath="emitterCells.Water.lifetime" duration="0.25" fillMode="backwards" timingFunction="easeInEaseOut"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="emitterCells.Water.lifetime" targetId="#9">
+	    <animation type="CABasicAnimation" keyPath="emitterCells.Water.lifetime" duration="0.25" fillMode="backwards" timingFunction="easeInEaseOut"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement final="false" key="position" targetId="#1">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" keyPath="position" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement final="false" key="hidden" targetId="#5">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" keyPath="hidden" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement final="false" key="hidden" targetId="#10">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" keyPath="hidden" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement final="false" key="hidden" targetId="#11">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" keyPath="hidden" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement final="false" key="position" targetId="#6">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" keyPath="position" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement final="false" key="hidden" targetId="#12">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" keyPath="hidden" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement final="false" key="position" targetId="#5">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" keyPath="position" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement final="false" key="hidden" targetId="#6">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" keyPath="hidden" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement final="false" key="hidden" targetId="#8">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" keyPath="hidden" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement final="false" key="hidden" targetId="#7">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" keyPath="hidden" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement final="false" key="hidden" targetId="#9">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" keyPath="hidden" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement final="false" key="lifetime" targetId="#7">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" keyPath="lifetime" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement final="false" key="lifetime" targetId="#8">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" keyPath="lifetime" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement final="false" key="lifetime" targetId="#9">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" keyPath="lifetime" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement final="false" key="position" targetId="#12">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" keyPath="position" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement final="false" key="position" targetId="#13">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" keyPath="position" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement final="false" key="bounds" targetId="#13">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" keyPath="bounds" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	</elements>
+      </LKStateTransition>
+    </stateTransitions>
+  </CALayer>
+</caml>
