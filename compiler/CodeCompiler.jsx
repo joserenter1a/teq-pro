@@ -73,11 +73,16 @@ function CodeCompiler() {
     try {
       const response = await axios.request(options);
       const result = response.data.Result;
-      setOutput(result);
-      setOutputVisible(true); // Show the output text area
-      // Check if there are any errors in the response
-      if (response.data.Errors !== null) {
-        setError(response.data.Errors);
+      const errorOutput = response.data.Errors;
+
+      if (errorOutput) {
+        // If there is an error, combine it with the result and set it to output
+        setOutput(errorOutput + '\n' + result);
+        setError(errorOutput);
+      } else {
+        // If no error, set the result as the output
+        setOutput(result);
+        setError('');
       }
     } catch (error) {
       console.error(error);
@@ -107,19 +112,36 @@ function CodeCompiler() {
           className="code"
           id="code"
           name="code"
-          style={{ minHeight: '400px', width: '45%' }}
+          style={{ minHeight: '400px', width: '50%' }}
           rows={20} // Number of visible text lines when needed
           onChange={(e) => setCode(e.target.value)}
         />
 
         {/* Text area for code output */}
-        <textarea
+        {/* <textarea
           className="output"
           id="output"
           name="output"
           readOnly
           value={output}
-          style={{ minHeight: '400px', width: '45%' }}
+          style={{ 
+            minHeight: '400px', 
+            width: '50%',
+            color: error ? 'red' : 'black', // Set the text color to red if there's an error
+          }}
+        /> */}
+        <textarea
+        className="output"
+        id="output"
+        name="output"
+        readOnly
+        value={output}
+        style={{
+          minHeight: '400px',
+          width: '50%',
+          color: error ? 'red' : 'black',
+          backgroundColor: error ? '#ffebeb' : 'white',
+        }}
         />
       </div>
 
@@ -140,22 +162,25 @@ function CodeCompiler() {
       <div>
         <center>
           {/* Compilation Button */}
-          <button type="button" class="CompileSubmitButton" onClick={handleRun} disabled={isLoadingCompile}>
+          <button 
+            type="button" 
+            class="CompileSubmitButton" 
+            onClick={handleRun} 
+            disabled={isLoadingCompile}>
             {isLoadingCompile ? 'Compiling...' : 'Compile'}
           </button>
 
           {/* Submit Button */}
-          <button type="button" class="CompileSubmitButton" onClick={handleSubmit} disabled={isLoadingSubmit}>
+          <button 
+            type="button" 
+            class="CompileSubmitButton" 
+            onClick={handleSubmit} 
+            disabled={isLoadingSubmit}>
             {isLoadingSubmit ? 'Submitting...' : 'Submit'}
           </button>
         </center>
       </div>
-      
-      {/* Displays Error or Output */}
-      {/* {error && <div style={{ color: 'red' }}>{error}</div>}
-      <pre>{output}</pre> */}
     </div>
   );
 }
-
 export default CodeCompiler;
