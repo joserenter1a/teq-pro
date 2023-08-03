@@ -3,7 +3,7 @@ import AgoraRTC from 'agora-rtc-sdk-ng';
 import { VideoPlayer } from './VideoPlayer';
 
 const APP_ID = '5f41eed412454d93ab8e2d9b61430bc6';
-const TOKEN = '007eJxTYLi/atX1aKbE+t2/Eu5XuiSouGq2XJ/GO1F/scJW4TVdSjsUGEzTTAxTU1NMDI1MTE1SLI0TkyxSjVIsk8wMTYwNkpLNUl3XpzQEMjJMLBdlYWSAQBCfjaEktbCgKJ+BAQBzzh9n'
+const TOKEN = '007eJxTYHDO3sZl8Eq7eINfZfnyEtb8RLlI/12zXJmzRZk31T0JNlRgME0zMUxNTTExNDIxNUmxNE5Mskg1SrFMMjM0MTZISjZre3QqpSGQkeHNc3dWRgYIBPHZGEpSCwuK8hkYALBbHnw='
 const CHANNEL = 'teqpro';
 
 const client = AgoraRTC.createClient({
@@ -72,12 +72,14 @@ export const VideoRoom = () => {
 
   return (
     <div
-      style={{ display: 'flex', justifyContent: 'center' }}
+      style={{ display: 'flex', justifyContent: 'flex-start' }}
     >
       <div
         style={{
+          flex: 1,
           display: 'grid',
-          gridTemplateColumns: 'repeat(2, 200px)',
+          gridTemplateColumns: `'repeat(2, 200px)'`,
+          gridGap: 10
         }}
       >
         {users.map((user) => (
