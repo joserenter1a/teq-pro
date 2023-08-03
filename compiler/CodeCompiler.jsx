@@ -109,40 +109,31 @@ function CodeCompiler() {
       <div style={{ display: 'flex', gap: '10px' }}>    {/* Div around Text area */}
         {/* Text area for code input */}
         <textarea
-          className="code"
-          id="code"
-          name="code"
-          style={{ minHeight: '400px', width: '50%' }}
+          className="input"
+          id="input"
+          name="input"
           rows={20} // Number of visible text lines when needed
+          style={{ 
+            minHeight: '400px', 
+            minWidth: '300px'
+          }}
           onChange={(e) => setCode(e.target.value)}
         />
 
         {/* Text area for code output */}
-        {/* <textarea
+        <textarea
           className="output"
           id="output"
           name="output"
           readOnly
           value={output}
-          style={{ 
-            minHeight: '400px', 
-            width: '50%',
-            color: error ? 'red' : 'black', // Set the text color to red if there's an error
+          style={{
+            minHeight: '400px',
+            minWidth: '300px',
+            color: error ? 'red' : 'black',
+            backgroundColor: error ? '#ffebeb' : 'white',
           }}
-        /> */}
-        <textarea
-        className="output"
-        id="output"
-        name="output"
-        readOnly
-        value={output}
-        style={{
-          minHeight: '400px',
-          width: '50%',
-          color: error ? 'red' : 'black',
-          backgroundColor: error ? '#ffebeb' : 'white',
-        }}
-        />
+        />  
       </div>
 
       <br></br><br></br>
