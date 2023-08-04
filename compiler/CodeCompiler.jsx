@@ -92,9 +92,41 @@ function CodeCompiler() {
     setIsLoadingCompile(false);
   };
 
+  
+  const runTestCase = (code, input, expectedOutput) => {
+    // Compare the actual output with the expected output
+    const actualOutput = handleRun(code, input);
+    return actualOutput.trim() === expectedOutput.trim();
+  };
+
+  const testCases = [
+    {
+      input: '5\n7\n',          // Example input for the first test case
+      expectedOutput: '12\n',   // Example expected output for the first test case
+    },
+    {
+      input: '10\n20\n',
+      expectedOutput: '30\n',
+    },
+                                    // FIXME: Update test cases
+  ];
+
   const handleSubmit = async () => {
     setIsLoadingSubmit(true);
-    //Pass
+    
+    // // Initialize an array to store test results
+    // const testResults = [];
+
+    // // Run the code against each test case and collect the results
+    // for (const testCase of testCases) {
+    //   const { input, expectedOutput } = testCase;
+    //   const testPassed = runTestCase(code, input, expectedOutput);
+    //   testResults.push(testPassed ? 'Passed' : 'Failed');
+    // }
+
+    // // Join the test results and display them in the output area
+    // setOutput(testResults.join('\n'));
+
     setIsLoadingSubmit(false);
   };
 
