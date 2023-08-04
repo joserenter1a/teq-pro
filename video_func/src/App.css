@@ -17,13 +17,14 @@ h1 {
   line-height: 1.1;
 }
 
+/*  The main thing causing all of the elenents to be completely centered is the "root" below */
+/*  When we start moving around elements more, we might wanna get rid of it and manually center/place elements */
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
-}
-
+  text-align: center;       
+} 
 .logo {
   height: 6em;
   padding: 1.5em;
