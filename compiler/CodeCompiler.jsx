@@ -131,13 +131,10 @@ function CodeCompiler() {
   };
 
   return (
-    <div style={{ padding:'20px' }}>
-      <h1>Code Compiler</h1>
-      <label>Enter Code here:</label>
+    <div>
+      <h2 className="compiler-title">Code Compiler</h2>
+      <label className="enter-code-here-label">Enter Code here:</label>
 
-      <br></br>
-      <br />
-      
       <div style={{ display: 'flex', gap: '10px' }}>    {/* Div around Text area */}
         {/* Text area for code input */}
         <textarea
@@ -168,21 +165,19 @@ function CodeCompiler() {
         />  
       </div>
 
-      <br></br><br></br>
+      <div className="language-selector">
+        {/* Programming Language Selector */}
+        <label>Choose a programming language:</label>
+        <select value={selectedLanguage} onChange={(e) => setSelectedLanguage(e.target.value)}>
+          {languageOptions.map((option) => (
+            <option key={option.value} value={option.value}>
+              {option.label}
+            </option>
+          ))}
+        </select>
+      </div>
 
-      {/* Programming Language Selector */}
-      <label>Choose a programming language:</label>
-      <select value={selectedLanguage} onChange={(e) => setSelectedLanguage(e.target.value)}>
-        {languageOptions.map((option) => (
-          <option key={option.value} value={option.value}>
-            {option.label}
-          </option>
-        ))}
-      </select>
-
-      <br></br><br></br>
-
-      <div>
+      <div className="language-buttons-container">
         <center>
           {/* Compilation Button */}
           <button 

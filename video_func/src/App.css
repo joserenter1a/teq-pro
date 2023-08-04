@@ -5,6 +5,16 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100px;
+}
+
+h1 {
+  color: dodgerblue;        /*  Just chose this color for now, will update later with rest of styling */
+  font-size: 3.2em;
+  line-height: 1.1;
 }
 
 #root {
@@ -54,7 +64,16 @@ body {
 
 button { /* Not Yet Clicked */
   color: dodgerblue;
+  background-color: #1a1a1a;
   border: 2px solid dodgerblue !important;  /* DONT KNOW WHY THE BORDER ISNT SHOWING UP WITHOUT THE "!important" */
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
 }
 
 button:hover { /* When Hovering Before Clicked */
@@ -63,33 +82,54 @@ button:hover { /* When Hovering Before Clicked */
    text-decoration: underline;
 }
 
-button:active{ /* Mouse Pressed but not yet finsihed */
+button:active { /* Mouse Pressed but not yet finsihed */
    color:red;
    background-color: rgb(176, 175, 175);
    text-decoration: underline;
    font-weight: bold;
 }
 
-/* ------ Code Compiler Stuff ------ */
+/* button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+} */ 
 
+/* ------ App.jsx Stuff ------ */
 .container {
   display: flex;
-  justify-content: flex-end; /* Align the container to the right side */
+  margin: 20px;
 }
+
+.video-container {
+  flex: 1;
+  margin: 20px;
+}
+
+.code-compiler-container {
+  margin: 20px;
+}
+
+/* ------ Code Compiler Stuff ------ */
+.compiler-title {
+  color: dodgerblue;
+}
+
+/* .enter-code-here-label {
+  float:left;
+} */
 
 input {
   resize: 'vertical' 
 }
 
-video-container {
-  flex: 1;
+.output {
   padding: 10px;
 }
 
-code-compiler-container {
-  padding: 10px;
+.language-selector{
+  margin: 15px;
 }
 
-output {
-  padding: 10px;
+.language-buttons-container {
+  margin: 15px;
 }
