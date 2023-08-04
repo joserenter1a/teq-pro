@@ -50,27 +50,46 @@ body {
   color: #888;
 }
 
+/* ------------ Buttons ------------ */
 
-/* Code Compiler Stuff */
+button { /* Not Yet Clicked */
+  color: dodgerblue;
+  border: 2px solid dodgerblue !important;  /* DONT KNOW WHY THE BORDER ISNT SHOWING UP WITHOUT THE "!important" */
+}
+
+button:hover { /* When Hovering Before Clicked */
+   color:black;
+   background-color: lightgray;
+   text-decoration: underline;
+}
+
+button:active{ /* Mouse Pressed but not yet finsihed */
+   color:red;
+   background-color: rgb(176, 175, 175);
+   text-decoration: underline;
+   font-weight: bold;
+}
+
+/* ------ Code Compiler Stuff ------ */
 
 .container {
   display: flex;
   justify-content: flex-end; /* Align the container to the right side */
 }
 
-.input {
+input {
   resize: 'vertical' 
 }
 
-.video-container {
+video-container {
   flex: 1;
   padding: 10px;
 }
 
-.code-compiler-container {
+code-compiler-container {
   padding: 10px;
 }
 
-.output {
+output {
   padding: 10px;
 }
