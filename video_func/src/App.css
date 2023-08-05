@@ -1,3 +1,5 @@
+@import '../../video_func/node_modules/highlight.js/styles/default.css';
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -62,7 +64,6 @@ h1 {
 }
 
 /* ------------ Buttons ------------ */
-
 button { /* Not Yet Clicked */
   color: dodgerblue;
   background-color: #1a1a1a;
@@ -119,9 +120,12 @@ button:focus-visible {
   float:left;
 } */
 
-input {
-  resize: 'vertical' 
-}
+/* .input {
+  resize: 'vertical' ;
+  font: monospace, ;
+  white-space: 'pre-wrap';
+  word-wrap: 'break-word';      // FIXME: Check later to ensure this isn't needed anymore
+} */
 
 .output {
   padding: 10px;
