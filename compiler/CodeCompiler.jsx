@@ -1,5 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+
+// import Highlight from 'react-highlight'
+// import 'highlight.js/styles/default.css'; // Import the highlight.js CSS theme
 
 const languageOptions = [
   // All available languages
@@ -49,8 +52,6 @@ function CodeCompiler() {
   const [code, setCode] = useState('');
   const [selectedLanguage, setSelectedLanguage] = useState('5'); // Default to Python (value 5)
   const [error, setError] = useState('');
-  
-  
   
   const handleRun = async () => {
     setIsLoadingCompile(true);
@@ -136,20 +137,24 @@ function CodeCompiler() {
       <h2 className="compiler-title">Code Compiler</h2>
       <label className="enter-code-here-label">Enter Code here:</label>
 
-      <div style={{ display: 'flex', gap: '10px' }}>    {/* Div around Text area */}
-        {/* Text area for code input */}
+      <div style={{ display: 'flex', gap: '10px' }}>  {/* Div around Text area */}
         <textarea
-          className="input"
+          className={`language-${selectedLanguage}`}
           id="input"
           name="input"
-          rows={20} // Number of visible text lines when needed
-          style={{ 
-            minHeight: '400px', 
-            minWidth: '300px'
+          rows={20}
+          style={{
+            minHeight: '400px',
+            minWidth: '300px',
+            resize: 'vertical',
+            font: 'monospace',
+            whiteSpace: 'pre-wrap',
+            wordWrap: 'break-word',
           }}
           onChange={(e) => setCode(e.target.value)}
+          value={code} // Set the value of the textarea to the state "code"
         />
-
+        
         {/* Text area for code output */}
         <textarea
           className="output"
