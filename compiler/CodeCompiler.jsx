@@ -51,6 +51,7 @@ function CodeCompiler() {
   const [error, setError] = useState('');
   
   
+  
   const handleRun = async () => {
     setIsLoadingCompile(true);
     setError(''); // Clear any previous errors
