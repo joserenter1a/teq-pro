@@ -1,9 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-// import Highlight from 'react-highlight'
-// import 'highlight.js/styles/default.css'; // Import the highlight.js CSS theme
-
 const languageOptions = [
   // All available languages
   { label: 'C#', value: '1' },
@@ -139,7 +136,7 @@ function CodeCompiler() {
 
       <div style={{ display: 'flex', gap: '10px' }}>  {/* Div around Text area */}
         <textarea
-          className={`language-${selectedLanguage}`}
+          className="input"
           id="input"
           name="input"
           rows={20}
@@ -154,7 +151,7 @@ function CodeCompiler() {
           onChange={(e) => setCode(e.target.value)}
           value={code} // Set the value of the textarea to the state "code"
         />
-        
+
         {/* Text area for code output */}
         <textarea
           className="output"
@@ -168,7 +165,7 @@ function CodeCompiler() {
             color: error ? 'red' : 'black',
             backgroundColor: error ? '#ffebeb' : 'white',
           }}
-        />  
+          />
       </div>
 
       <div className="language-selector">
@@ -188,7 +185,7 @@ function CodeCompiler() {
           {/* Compilation Button */}
           <button 
             type="button" 
-            class="CompileSubmitButton" 
+            className="CompileSubmitButton" 
             onClick={handleRun} 
             disabled={isLoadingCompile}>
             {isLoadingCompile ? 'Compiling...' : 'Compile'}
@@ -197,7 +194,7 @@ function CodeCompiler() {
           {/* Submit Button */}
           <button 
             type="button" 
-            class="CompileSubmitButton" 
+            className="CompileSubmitButton" 
             onClick={handleSubmit} 
             disabled={isLoadingSubmit}>
             {isLoadingSubmit ? 'Submitting...' : 'Submit'}
