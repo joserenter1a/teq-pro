@@ -13,10 +13,8 @@
     "agora-rtc-sdk-ng": "^4.18.1",
     "axios": "^1.4.0",
     "express": "^4.18.2",
-    "highlight.js": "^11.8.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-highlight": "^0.15.0"
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.14",
