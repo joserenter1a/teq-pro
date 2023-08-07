@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import createWebSocketConnection from './WebSocketUtility'; // Import the WebSocket utility
 
 const languageOptions = [
   // All available languages
@@ -49,6 +50,18 @@ function CodeCompiler() {
   const [code, setCode] = useState('');
   const [selectedLanguage, setSelectedLanguage] = useState('5'); // Default to Python (value 5)
   const [error, setError] = useState('');
+  const [ws, setWs] = useState(null);
+
+  useEffect(() => {
+    // Create WebSocket connection when the component mounts
+    const webSocketConnection = createWebSocketConnection();
+    setWs(webSocketConnection);
+
+    return () => {
+      // Close WebSocket connection when the component unmounts
+      webSocketConnection.close();
+    };
+  }, []);
   
   const handleRun = async () => {
     setIsLoadingCompile(true);
@@ -83,6 +96,8 @@ function CodeCompiler() {
         setOutput(result);
         setError('');
       }
+      // Send code updates to WebSocket server
+      ws.send(JSON.stringify({ code }));
     } catch (error) {
       console.error(error);
       setError('Error compiling code. Please check your code and try again.');
@@ -125,6 +140,13 @@ function CodeCompiler() {
 
     // // Join the test results and display them in the output area
     // setOutput(testResults.join('\n'));
+
+  //   // Send code updates to WebSocket server
+  //   ws.send(JSON.stringify({ code }));
+  // } catch (error) {
+  //   console.error(error);
+  //   setError('Error compiling code. Please check your code and try again.');
+  // }
 
     setIsLoadingSubmit(false);
   };
