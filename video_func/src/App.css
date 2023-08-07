@@ -17,6 +17,35 @@ h1 {
   line-height: 1.1;
 }
 
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
 /*  The main thing causing all of the elenents to be completely centered is the "root" below */
 /*  When we start moving around elements more, we might wanna get rid of it and manually center/place elements */
 #root {
@@ -64,8 +93,8 @@ h1 {
 /* ------------ Buttons ------------ */
 button { /* Not Yet Clicked */
   color: dodgerblue;
-  background-color: #1a1a1a;
-  border: 2px solid dodgerblue !important;  /* DONT KNOW WHY THE BORDER ISNT SHOWING UP WITHOUT THE "!important" */
+  background-color: whitesmoke;
+  border: 2px solid dodgerblue;
   cursor: pointer;
   border-radius: 8px;
   padding: 0.6em 1.2em;
@@ -118,12 +147,12 @@ button:focus-visible {
   float:left;
 } */
 
-/* .input {
+.input {
   resize: 'vertical' ;
   font: monospace, ;
   white-space: 'pre-wrap';
-  word-wrap: 'break-word';      // FIXME: Check later to ensure this isn't needed anymore
-} */
+  word-wrap: 'break-word';
+}
 
 .output {
   padding: 10px;
