@@ -10,9 +10,7 @@ function App() {
     <div className="App">
       <h1>TeqPro Virtual Call</h1>
       {!joined ? (
-        <button onClick={() => setJoined(true)}>
-          Join Room
-        </button>
+        <button onClick={() => setJoined(true)}>Join Room</button>
       ) : (
         <div className="container">
           <div className="video-container">

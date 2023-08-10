@@ -75,11 +75,9 @@ function CodeCompiler() {
       const errorOutput = response.data.Errors;
 
       if (errorOutput) {
-        // If there is an error, combine it with the result and set it to output
         setOutput(errorOutput + '\n' + result);
         setError(errorOutput);
       } else {
-        // If no error, set the result as the output
         setOutput(result);
         setError('');
       }
@@ -91,48 +89,137 @@ function CodeCompiler() {
     setIsLoadingCompile(false);
   };
 
-  
-  const runTestCase = (code, input, expectedOutput) => {
-    // Compare the actual output with the expected output
-    const actualOutput = handleRun(code, input);
-    return actualOutput.trim() === expectedOutput.trim();
-  };
-
   const testCases = [
-    {
-      input: '5\n7\n',          // Example input for the first test case
-      expectedOutput: '12\n',   // Example expected output for the first test case
-    },
-    {
-      input: '10\n20\n',
-      expectedOutput: '30\n',
-    },
-                                    // FIXME: Update test cases
-  ];
+      {
+  functionCode: `
+    def fizz_buzz(n):
+        result = []
+        for i in range(1, n+1):
+            if i % 3 == 0 and i % 5 == 0:
+                result.append("FizzBuzz")
+            elif i % 3 == 0:
+                result.append("Fizz")
+            elif i % 5 == 0:
+                result.append("Buzz")
+            else:
+                result.append(str(i))
+        return '\n'.join(result)
+  `,
+expectedOutput: `1
+2
+Fizz
+4
+Buzz
+Fizz
+7
+8
+Fizz
+Buzz
+11
+Fizz
+13
+14
+FizzBuzz
+16
+17
+Fizz
+19
+Buzz
+Fizz
+22
+23
+Fizz
+Buzz
+26
+Fizz
+28
+29
+FizzBuzz
+31
+32
+Fizz
+34
+Buzz
+Fizz
+37
+38
+Fizz
+Buzz
+41
+Fizz
+43
+44
+FizzBuzz
+46
+47
+Fizz
+49
+Buzz
+`},]
+
+  const runTestCase = async (userCode, expectedOutput) => {
+    setIsLoadingCompile(true);
+    setError('');
+  
+    const encodedParams = new URLSearchParams();
+    encodedParams.set('LanguageChoice', selectedLanguage);
+    encodedParams.set('Program', userCode);
+  
+    const options = {
+      method: 'POST',
+      url: 'https://code-compiler.p.rapidapi.com/v2',
+      headers: {
+        'content-type': 'application/x-www-form-urlencoded',
+        'X-RapidAPI-Key': 'c40e63ca05msh21cc53be5c61ed5p1be771jsnda85c9acad28',
+        'X-RapidAPI-Host': 'code-compiler.p.rapidapi.com',
+      },
+      data: encodedParams,
+    };
+  
+    try {
+      const response = await axios.request(options);
+      const result = response.data.Result;
+      const errorOutput = response.data.Errors;
+  
+      setIsLoadingCompile(false);
+  
+      if (errorOutput) {
+        setError(errorOutput);
+        return 'Test Failed!';
+      } else if (result === expectedOutput) {
+        return 'Test Passed!';
+      } else {
+        return 'Test Failed!';
+      }
+    } catch (error) {
+      console.error(error);
+      setError('Error compiling code. Please check your code and try again.');
+      setIsLoadingCompile(false);
+      return 'Test Failed!';
+    }
+  };
 
   const handleSubmit = async () => {
     setIsLoadingSubmit(true);
-    
-    // // Initialize an array to store test results
-    // const testResults = [];
+    const testCase = testCases[0];
+    const userCode = code;
+    const testResult = await runTestCase(userCode, testCase.expectedOutput);
 
-    // // Run the code against each test case and collect the results
-    // for (const testCase of testCases) {
-    //   const { input, expectedOutput } = testCase;
-    //   const testPassed = runTestCase(code, input, expectedOutput);
-    //   testResults.push(testPassed ? 'Passed' : 'Failed');
-    // }
-
-    // // Join the test results and display them in the output area
-    // setOutput(testResults.join('\n'));
-
-    setIsLoadingSubmit(false);
+    if (testResult === 'Test Failed!') {
+      setError(true);
+      const finalOutput = `${testResult}\n\nExpected Output:\n${testCase.expectedOutput}`;
+      setOutput(finalOutput); 
+      setIsLoadingSubmit(false);
+    } else {
+      const finalOutput = `${testResult}\n\nYour Output:\n${testCase.expectedOutput}`;
+      setOutput(finalOutput); 
+      setIsLoadingSubmit(false);
+    }
   };
 
   return (
     <div>
       <h2 className="compiler-title">Code Compiler</h2>
-      <label className="enter-code-here-label">Enter Code here:</label>
 
       <div style={{ display: 'flex', gap: '10px' }}>  {/* Div around Text area */}
         <textarea
@@ -140,14 +227,6 @@ function CodeCompiler() {
           id="input"
           name="input"
           rows={20}
-          style={{
-            minHeight: '400px',
-            minWidth: '300px',
-            resize: 'vertical',
-            font: 'monospace',
-            whiteSpace: 'pre-wrap',
-            wordWrap: 'break-word',
-          }}
           onChange={(e) => setCode(e.target.value)}
           value={code} // Set the value of the textarea to the state "code"
         />
@@ -160,8 +239,6 @@ function CodeCompiler() {
           readOnly
           value={output}
           style={{
-            minHeight: '400px',
-            minWidth: '300px',
             color: error ? 'red' : 'black',
             backgroundColor: error ? '#ffebeb' : 'white',
           }}
@@ -205,3 +282,4 @@ function CodeCompiler() {
   );
 }
 export default CodeCompiler;
+

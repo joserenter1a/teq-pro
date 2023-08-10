@@ -3,7 +3,7 @@ import AgoraRTC from 'agora-rtc-sdk-ng';
 import { VideoPlayer } from './VideoPlayer';
 
 const APP_ID = '5f41eed412454d93ab8e2d9b61430bc6';
-const TOKEN = '007eJxTYHgT+kt1X5mRzcmdDBwRWWcOJu+pnHNY4r2Qg95VHj/Bm3EKDJZmhmkGaRbGlinJqSYmiSaJaUnmhoZJxgapqckphskWya4XUxoCGRnCjzWwMDJAIIjPxlCSWlhQlM/AAABwzSAl'
+const TOKEN = '007eJxTYJjY831eHUPxw+PXZ73f8OK66P5rDjOuLz3W7PCi5Lcs3658BQZLM8M0gzQLY8uU5FQTk0STxLQkc0PDJGOD1NTkFMNkiw+/L6U0BDIylHM+Z2JkgEAQn42hJLWwoCifgQEADnElrQ=='
 const CHANNEL = 'teqpro';
 
 const client = AgoraRTC.createClient({
