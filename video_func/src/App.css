@@ -90,6 +90,7 @@ h1 {
   color: #888;
 }
 
+
 /* ------------ Buttons ------------ */
 button { /* Not Yet Clicked */
   color: dodgerblue;
@@ -123,6 +124,7 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 } */ 
 
+
 /* ------ App.jsx Stuff ------ */
 .container {
   display: flex;
@@ -149,13 +151,18 @@ button:focus-visible {
 
 .input {
   resize: 'vertical' ;
-  font: monospace, ;
+  font: monospace;
   white-space: 'pre-wrap';
   word-wrap: 'break-word';
+  min-height: 400px;
+  min-width: 300px;
 }
 
 .output {
   padding: 10px;
+  min-height: 400px;
+  min-width: 300px;
+  color: black;
 }
 
 .language-selector{
