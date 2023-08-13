@@ -129,6 +129,8 @@ button:focus-visible {
 .container {
   display: flex;
   margin: 20px;
+  background-color: #213547;
+  border-radius: 30px;
 }
 
 .video-container {
@@ -137,12 +139,13 @@ button:focus-visible {
 }
 
 .code-compiler-container {
-  margin: 20px;
+  margin: 5px;
 }
 
 /* ------ Code Compiler Stuff ------ */
 .compiler-title {
   color: dodgerblue;
+  font-size: 40px;
 }
 
 /* .enter-code-here-label {
