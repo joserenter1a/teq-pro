@@ -1,0 +1,26 @@
+runtime: nodejs14  # Choose the appropriate Node.js runtime version
+
+env_variables:
+  # Add any environment variables your application needs
+  PORT: 8080
+
+instance_class: F2  # Choose the instance class based on your needs
+
+automatic_scaling:
+  target_cpu_utilization: 0.65
+  min_instances: 1
+  max_instances: 10
+
+# If you need to customize any deployment settings or install dependencies, you can use the following:
+
+# Handlers define how requests are routed to your application.
+handlers:
+  - url: /static
+    static_dir: public
+
+# If your application requires special dependencies or build steps, use the following:
+
+# Automatic deployment
+# Deployments can happen automatically in response to code changes, or you can manually deploy using the Google Cloud SDK.
+# For more advanced deployment scenarios, you can use Cloud Build and a cloudbuild.yaml file.
+
