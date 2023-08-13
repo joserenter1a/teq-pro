@@ -129,6 +129,8 @@ button:focus-visible {
 .container {
   display: flex;
   margin: 20px;
+  background-color: #242424;
+  border-radius: 20px;
 }
 
 .video-container {

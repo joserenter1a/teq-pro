@@ -1,6 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
+import Editor from 'react-simple-code-editor';
+
+import { highlight, languages } from 'prismjs/components/prism-core';
+import 'prismjs/components/prism-clike';
+import 'prismjs/components/prism-javascript';
+import 'prismjs/themes/prism.css';
+
 const languageOptions = [
   // All available languages
   { label: 'C#', value: '1' },
@@ -222,14 +229,24 @@ Buzz
       <h2 className="compiler-title">Code Compiler</h2>
 
       <div style={{ display: 'flex', gap: '10px' }}>  {/* Div around Text area */}
-        <textarea
-          className="input"
-          id="input"
-          name="input"
-          rows={20}
-          onChange={(e) => setCode(e.target.value)}
-          value={code} // Set the value of the textarea to the state "code"
-        />
+          <div
+            className='input'
+          >
+          <Editor
+            value={code}
+            onValueChange={code => setCode(code)}
+            highlight={code => highlight(code, languages.js)}
+            padding={10}
+            style={{
+              fontFamily: '"Fira code", "Fira Mono", monospace',
+              fontSize: 12,
+              color: 'white',
+              height: '100%',
+              backgroundColor: '#171717',
+            }}
+          />
+          </div>
+
 
         {/* Text area for code output */}
         <textarea
@@ -247,7 +264,7 @@ Buzz
 
       <div className="language-selector">
         {/* Programming Language Selector */}
-        <label>Choose a programming language:</label>
+        <label style = {{color: 'white'}}>Choose a programming language:</label>
         <select value={selectedLanguage} onChange={(e) => setSelectedLanguage(e.target.value)}>
           {languageOptions.map((option) => (
             <option key={option.value} value={option.value}>

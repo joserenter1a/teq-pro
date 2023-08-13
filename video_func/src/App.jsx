@@ -6,6 +6,9 @@ import CodeCompiler from '../../compiler/CodeCompiler';
 function App() {
   const [joined, setJoined] = useState(false);
 
+  const [code, setCode] = React.useState(
+    `function add(a, b) {\n  return a + b;\n}`
+  );
   return (
     <div className="App">
       <h1>TeqPro Virtual Call</h1>
@@ -17,7 +20,7 @@ function App() {
             <VideoRoom />
           </div>
           <div className="code-compiler-container">
-            <CodeCompiler />
+            <CodeCompiler/>
           </div>
         </div>
       )}
