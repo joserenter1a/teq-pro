@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import AgoraRTC from 'agora-rtc-sdk-ng';
-import AgoraRTM, { RtmClient } from 'agora-rtm-sdk';
 import { VideoPlayer } from './VideoPlayer';
 
 const APP_ID = '5f41eed412454d93ab8e2d9b61430bc6';
@@ -12,20 +11,7 @@ const client = AgoraRTC.createClient({
   codec: 'vp8',
 });
 
-const rtmUid = String(Math.floor(Math.random()) * 2032)
-let rtmClient;
-let channel;
 
-const  initRtm = async (name) => {
-  rtmClient = AgoraRTM.createInstance(APP_ID);
-  await rtmClient.login({'uid': rtmUid, 'token': TOKEN})
-
-  channel = rtmClient.createChannel(CHANNEL)
-  await channel.join()
-
-  channel.on('MemberJoined', handleMemberJoined)
-  channel.on('MemberLeft', handleMemberLeft)
-}
 
 export const VideoRoom = () => {
   const [users, setUsers] = useState([]);
@@ -58,7 +44,7 @@ export const VideoRoom = () => {
       .then((uid) =>
         Promise.all([
           AgoraRTC.createMicrophoneAndCameraTracks(),
-          uid, initRtm(CHANNEL)
+          uid
         ])
       )
       .then(([tracks, uid]) => {
