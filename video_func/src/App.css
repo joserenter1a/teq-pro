@@ -8,7 +8,8 @@ body {
   display: flex;
   place-items: center;
   min-width: 320px;
-  min-height: 100px;
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #afa7a7, #060505);
 }
 
 h1 {
@@ -90,6 +91,24 @@ h1 {
   color: #888;
 }
 
+.hamb{
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+.hambel{
+  list-style: none;
+}
+
+.room-input{
+  height: 3em;
+  width: 15em;
+}
+
+
+.room-input:hover{
+  filter: drop-shadow(0 0 .5em #646cffaa);
+}
 
 /* ------------ Buttons ------------ */
 button { /* Not Yet Clicked */
