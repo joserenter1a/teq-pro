@@ -6,6 +6,8 @@ import Editor from 'react-simple-code-editor';
 import { highlight, languages } from 'prismjs/components/prism-core';
 import 'prismjs/components/prism-clike';
 import 'prismjs/components/prism-javascript';
+import 'prismjs/components/prism-python';
+
 import 'prismjs/themes/prism.css';
 
 const languageOptions = [
@@ -235,12 +237,12 @@ Buzz
           <Editor
             value={code}
             onValueChange={code => setCode(code)}
-            highlight={code => highlight(code, languages.js)}
+            highlight={code => highlight(code, languages.python)}
             padding={10}
             style={{
               fontFamily: '"Fira code", "Fira Mono", monospace',
-              fontSize: 12,
-              color: 'white',
+              fontSize: 14,
+              color: 'gray',
               height: '100%',
               backgroundColor: '#171717',
             }}
@@ -255,7 +257,9 @@ Buzz
           name="output"
           readOnly
           value={output}
-          style={{
+          style={{              
+            fontFamily: '"Fira code", "Fira Mono", monospace',
+            fontSize: 14,
             color: error ? 'red' : 'black',
             backgroundColor: error ? '#ffebeb' : 'white',
           }}
