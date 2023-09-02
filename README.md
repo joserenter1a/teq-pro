@@ -1,4 +1,4 @@
-# agora-sdk
+# Introducing Teq Pro
 
 Final Project for CS 399 -- Intro to Cloud Computing
 
