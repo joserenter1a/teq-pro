@@ -36,7 +36,7 @@ h1 {
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
-    background-color: #ffffff;
+    background-color: #131313;
   }
   a:hover {
     color: #747bff;
@@ -136,6 +136,8 @@ button:focus-visible {
 .video-container {
   flex: 1;
   margin: 20px;
+  background-color: #242424;
+
 }
 
 .code-compiler-container {
